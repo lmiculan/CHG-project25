@@ -1,0 +1,6 @@
+# Ignored files
+
+*.bam
+*.sam
+*.vcf
+*.rds
