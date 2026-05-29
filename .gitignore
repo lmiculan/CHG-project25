@@ -4,3 +4,4 @@
 *.sam
 *.vcf
 *.rds
+data/annotations/human_g1k_v37.fasta
