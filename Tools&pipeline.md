@@ -21,3 +21,12 @@
 ## Samtools
 - sorting via samtools sort
 - indexing via samtools index
+
+# Realignment
+Gatk3 pipeline: RealignerTargetCreator -> IndelRealigner
+
+# Recalibration
+GATK3:
+- 
+
+# Annotation
