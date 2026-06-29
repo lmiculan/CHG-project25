@@ -1,7 +1,7 @@
 # View files
 DATA_DIR=data/ogdata
 OUT_DIR=data/bamprocessing
-RESULTS_DIR=data/results
+RESULTS_DIR=data/results/initialqc
 
 BAMS=$(ls $DATA_DIR/*.bam)
 
