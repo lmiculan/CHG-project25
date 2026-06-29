@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set gatk function
-BAMS=data/realign/*.bam
+BAMS=data/bamprocessing/realign/*.bam
 REF=data/annotations/human_g1k_v37.fasta
 #KNOWN_SITES=data/annotations/hapmap_3.3.b37.vcf
 KNOWN_SITES=data/annotations/Mills_and_1000G_gold_standard.indels.b37.vcf
@@ -15,9 +15,9 @@ mkdir -p results/recal
 for bam in $BAMS; do
     $JAVA8 -jar ~/bin/GenomeAnalysisTK.jar -version
     base=$(basename "$bam" .bam)
-    recal_table="data/recal/${base}.recal.table"
-    recal_table_after="data/recal/${base}.recal_after.table"
-    recal_bam="data/recal/${base}.recal.bam"
+    recal_table="data/bamprocessing/recal/${base}.recal.table"
+    recal_table_after="data/bamprocessing/recal/${base}.recal_after.table"
+    recal_bam="data/bamprocessing/recal/${base}.recal.bam"
 
     # $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
     #     -T BaseRecalibrator \
