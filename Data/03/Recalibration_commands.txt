@@ -1,0 +1,30 @@
+# did it for control and tumor too
+
+###### GATK3
+# first recalibration
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T BaseRecalibrator -R ../../../../../annotations/human_g1k_v37.fasta -I ../Control.sorted.realigned.bam -knownSites ../../../../../annotations/hapmap_3.3.b37.vcf -o recal.table -L ../../../../../annotations/CancerGenesSel.bed
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T BaseRecalibrator -R ../../../../../annotations/human_g1k_v37.fasta -I ../Tumor.sorted.realigned.bam -knownSites ../../../../../annotations/hapmap_3.3.b37.vcf -o recal_tumor.table -L ../../../../../annotations/CancerGenesSel.bed
+
+# create recalibrated file
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T PrintReads -R ../../../../../annotations/human_g1k_v37.fasta -I ../Control.sorted.realigned.bam -BQSR recal.table -o Control.sorted.realigned.recalibrated.bam -L ../../../../../annotations/CancerGenesSel.bed --emit_original_quals
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T PrintReads -R ../../../../../annotations/human_g1k_v37.fasta -I ../Tumor.sorted.realigned.bam -BQSR recal_tumor.table -o Tumor.sorted.realigned.recalibrated.bam -L ../../../../../annotations/CancerGenesSel.bed --emit_original_quals
+
+# second recalibration
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T BaseRecalibrator -R ../../../../../annotations/human_g1k_v37.fasta -I ../Control.sorted.realigned.bam -knownSites ../../../../../annotations/hapmap_3.3.b37.vcf -BQSR recal.table -o after_recal.table -L ../../../../../annotations/CancerGenesSel.bed
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T BaseRecalibrator -R ../../../../../annotations/human_g1k_v37.fasta -I ../Tumor.sorted.realigned.bam -knownSites ../../../../../annotations/hapmap_3.3.b37.vcf -BQSR recal_tumor.table -o after_recal_tumor.table -L ../../../../../annotations/CancerGenesSel.bed
+
+# create the plots
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T AnalyzeCovariates -R ../../../../../annotations/human_g1k_v37.fasta -before recal.table -after after_recal.table -csv recal.csv -plots recal.pdf
+java -jar ../../../../../tools/GenomeAnalysisTK.jar -T AnalyzeCovariates -R ../../../../../annotations/human_g1k_v37.fasta -before recal_tumor.table -after after_recal_tumor.table -csv recal_tumor.csv -plots recal_tumor.pdf
+
+# count
+samtools view Control.sorted.realigned.recalibrated.bam | grep OQ | wc -l
+# result for Control: 556956
+samtools view Tumor.sorted.realigned.recalibrated.bam | grep OQ | wc -l
+# result for Tumor: 425036
+
+
+
+###### GATK4 version (didn't use it)
+#gatk BaseRecalibrator -R ref.fa -I in.bam --known-sites sites.vcf -O recal.table
+#gatk ApplyBQSR -R ref.fa -I in.bam --bqsr-recal-table recal.table -O bqsr.bam
