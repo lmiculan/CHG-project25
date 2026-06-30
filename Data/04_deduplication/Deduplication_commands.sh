@@ -20,15 +20,19 @@ java -jar ../../Tools/GenomeAnalysisTK.jar -T RealignerTargetCreator -R ../../An
 java -jar ../../Tools/GenomeAnalysisTK.jar -T IndelRealigner -R ../../Annotations/human_g1k_v37.fasta -I Sample.sorted.bam -targetIntervals realigner.intervals -o Sample.sorted.realigned.bam
 java -jar ../../Tools/GenomeAnalysisTK.jar -T BaseRecalibrator -R ../../Annotations/human_g1k_v37.fasta -I Sample.sorted.realigned.bam -knownSites ../../Annotations/hapmap_3.3.b37.vcf -o recal.table
 java -jar ../../Tools/GenomeAnalysisTK.jar -T PrintReads -R ../../Annotations/human_g1k_v37.fasta -I Sample.sorted.realigned.bam -BQSR recal.table -o Sample.sorted.realigned.recalibrated.bam --emit_original_quals
-java -jar ../../Tools/picard.jar MarkDuplicates I=Sample.sorted.realigned.recalibrated.bam O=Sample.sorted.realigned.recalibrated.dedup.bam REMOVE_DUPLICATES=true TMP_DIR=/tmp METRICS_FILE=Sample.sorted.realigned.recalibrated.picard.log ASSUME_SORTED=true
-samtools index Sample.sorted.realigned.recalibrated.dedup.bam
+
+# This for the project: i already did the things before 
+java -jar ../../../../../tools/picard.jar MarkDuplicates I=../03_recalibration/Control.sorted.realigned.recalibrated.bam O=Control.sorted.realigned.recalibrated.dedup.bam REMOVE_DUPLICATES=true TMP_DIR=/tmp METRICS_FILE=Control.sorted.realigned.recalibrated.picard.log ASSUME_SORTED=true
+java -jar ../../../../../tools/picard.jar MarkDuplicates I=../03_recalibration/Tumor.sorted.realigned.recalibrated.bam O=Tumor.sorted.realigned.recalibrated.dedup.bam REMOVE_DUPLICATES=true TMP_DIR=/tmp METRICS_FILE=Tumor.sorted.realigned.recalibrated.picard.log ASSUME_SORTED=true
+samtools index Control.sorted.realigned.recalibrated.dedup.bam
+samtools index Tumor.sorted.realigned.recalibrated.dedup.bam
 
 
-# Comparing results
-samtools index Sample.sorted.dedup.bam
+# Comparing results between the two methods (i didn't do this for the project)
+samtools index Control.sorted.dedup.bam
 samtools index Sample.nsorted.fixed.sorted.dedup.bam
 
-samtools flagstat Sample.sorted.dedup.bam
+samtools flagstat Control.sorted.dedup.bam
 samtools flagstat Sample.nsorted.fixed.sorted.dedup.bam
 samtools flagstat Sample.sorted.realigned.recalibrated.dedup.bam
 
