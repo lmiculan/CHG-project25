@@ -1,4 +1,4 @@
-
+# i only used the code at the end of the file, the rest is just for reference.
 ####### Annotating variants from bcf
 
 java -Xmx4g -jar ../../../tools/snpEff/snpEff.jar -v hg19kg ../../06_VariantCalling/Data/Sample.BCF.recode.vcf -s Sample.BCF.recode.ann.html > Sample.BCF.recode.ann.vcf
@@ -8,9 +8,9 @@ java -Xmx4g -jar ../../../tools/snpEff/SnpSift.jar Annotate ../../../annotations
 
 ####### Annotating variants from GATK
 
-#java -Xmx4g -jar ../../Tools/snpEff/snpEff.jar -v hg19kg ../../06_VariantCalling/Data/Sample.GATK.recode.vcf -s Sample.GATK.recode.ann.html > Sample.GATK.recode.ann.vcf
-#java -Xmx4g -jar ../../Tools/snpEff/SnpSift.jar Annotate ../../Annotations/hapmap_3.3.b37.vcf  Sample.GATK.recode.ann.vcf > Sample.GATK.recode.ann2.vcf
-#java -Xmx4g -jar ../../Tools/snpEff/SnpSift.jar Annotate ../../Annotations/clinvar_Pathogenic.vcf Sample.GATK.recode.ann2.vcf > Sample.GATK.recode.ann3.vcf
+java -Xmx4g -jar ../../Tools/snpEff/snpEff.jar -v hg19kg ../../06_VariantCalling/Data/Sample.GATK.recode.vcf -s Sample.GATK.recode.ann.html > Sample.GATK.recode.ann.vcf
+java -Xmx4g -jar ../../Tools/snpEff/SnpSift.jar Annotate ../../Annotations/hapmap_3.3.b37.vcf  Sample.GATK.recode.ann.vcf > Sample.GATK.recode.ann2.vcf
+java -Xmx4g -jar ../../Tools/snpEff/SnpSift.jar Annotate ../../Annotations/clinvar_Pathogenic.vcf Sample.GATK.recode.ann2.vcf > Sample.GATK.recode.ann3.vcf
 
 
 ####### Filtering .vcf files
@@ -24,5 +24,7 @@ cat Sample.BCF.recode.ann3.vcf | java -Xmx4g -jar ../../../tools/snpEff/SnpSift.
 #cat Sample.GATK.recode.ann3.vcf | java -Xmx4g -jar ../../../tools/snpEff/SnpSift.jar filter "(exists CLNSIG)"
 
 
+# what i used
+java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/Somatic.snp.filtered.recode.vcf -s Somatic.snp.ann.html > Somatic.snp.ann.vcf
 
 
