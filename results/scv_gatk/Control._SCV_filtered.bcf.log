@@ -1,0 +1,15 @@
+
+VCFtools - 0.1.17
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf results/scv_gatk/Control._SCV.vcf
+	--recode-INFO-all
+	--max-meanDP 2e+03
+	--min-meanDP 5
+	--minQ 20
+	--out results/scv_gatk/Control._SCV_filtered.bcf
+	--recode
+	--remove-indels
+
+Error: Can't determine file type of results/scv_gatk/Control._SCV.vcf
