@@ -8,15 +8,15 @@ mkdir -p $OUTDIR
 
 echo "Processing $BAMS"
 
-# samtools mpileup -B -q 1 -f "$REF" $BAMS | \
-#     java -Xmx4g -jar $VARSCAN copynumber \
-#     - \
-#     "$OUTDIR/SCNA" \
-#     --mpileup 1
+samtools mpileup -B -q 1 -f "$REF" $BAMS | \
+    java -Xmx4g -jar $VARSCAN copynumber \
+    - \
+    "$OUTDIR/SCNA" \
+    --mpileup 1
 
-# echo "Calling copy number variants with VarScan"
+echo "Calling copy number variants with VarScan"
 
-# java -jar $VARSCAN copyCaller $OUTDIR/SCNA.copynumber --output-file $OUTDIR/SCNA.copynumber.called
+java -jar $VARSCAN copyCaller $OUTDIR/SCNA.copynumber --output-file $OUTDIR/SCNA.copynumber.called
 
 ##CBS segmentation with CNVkit
 echo "Segmenting with CNVkit"

@@ -27,12 +27,19 @@ Gatk3 pipeline: RealignerTargetCreator -> IndelRealigner
 
 # Recalibration
 GATK3:
-- Used MILLS 1000G standard
+- Used ~MILLS 1000G standard~ hapmap
+- human genome vb37
+- 
 ![[Tumor.sorted.realigned.report.pdf]]
 ![[Control.sorted.realigned.report.pdf]]
 
 Used custom .Renviron for compatibility of R 4.0 with GATK3 (used R 3).
 
+# Deduplication
+GAtk3 picard
 
+
+# Somatic copy number calling
+VARSCAN and CNVKIT
 
 # Annotation
