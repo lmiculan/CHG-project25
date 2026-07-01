@@ -3,12 +3,12 @@ VCFtools - 0.1.17
 (C) Adam Auton and Anthony Marcketta 2009
 
 Parameters as interpreted:
-	--vcf results/scv_gatk/Control_SCV.vcf
+	--vcf results/gcv_gatk/Tumor_GVC.vcf
 	--recode-INFO-all
 	--max-meanDP 2e+03
 	--min-meanDP 5
 	--minQ 20
-	--out results/scv_gatk/Control_SCV_filtered.bcf
+	--out results/gcv_gatk/Tumor_GVC_filtered_snps.bcf
 	--recode
 	--remove-indels
 
@@ -24,5 +24,5 @@ Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,D
 Warning: Expected at least 2 parts in INFO entry: ID=RPA,Number=.,Type=Integer,Description="Number of times tandem repeat unit is repeated, for each allele (including reference)">
 After filtering, kept 1 out of 1 Individuals
 Outputting VCF file...
-After filtering, kept 41889 out of a possible 109653 Sites
+After filtering, kept 37259 out of a possible 108697 Sites
 Run Time = 1.00 seconds
