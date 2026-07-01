@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set gatk function
-BAMS=data/bamprocessing/*.sorted.bam
+BAMS=data/bamprocessing/sort/*.sorted.bam
 REF=data/annotations/human_g1k_v37.fasta
 JAVA8=/usr/lib/jvm/java-8-openjdk/bin/java
 

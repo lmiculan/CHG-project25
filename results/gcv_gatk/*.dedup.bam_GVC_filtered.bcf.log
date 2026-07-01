@@ -3,13 +3,13 @@ VCFtools - 0.1.17
 (C) Adam Auton and Anthony Marcketta 2009
 
 Parameters as interpreted:
-	--vcf results/scv_gatk/Tumor._SCV.vcf
+	--vcf results/gcv_gatk/*.dedup.bam_GVC.vcf
 	--recode-INFO-all
 	--max-meanDP 2e+03
 	--min-meanDP 5
 	--minQ 20
-	--out results/scv_gatk/Tumor._SCV_filtered.bcf
+	--out results/gcv_gatk/*.dedup.bam_GVC_filtered.bcf
 	--recode
 	--remove-indels
 
-Error: Can't determine file type of results/scv_gatk/Tumor._SCV.vcf
+Error: Can't determine file type of results/gcv_gatk/*.dedup.bam_GVC.vcf

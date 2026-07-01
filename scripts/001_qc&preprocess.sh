@@ -1,16 +1,18 @@
 # View files
 DATA_DIR=data/ogdata
 OUT_DIR=data/bamprocessing/sort
-RESULTS_DIR=data/results/initialqc
+RESULTS_DIR=results/initialqc
 
 BAMS=$(ls $DATA_DIR/*.bam)
 
+mkdir -p $OUT_DIR
+
 for bam in $BAMS; do
     basename=$(basename $bam .bam)
-    # echo "Processing $basename.bam..."
-    # samtools view -H -f 4 -F 8 $basename  | head -n 20
+    echo "Processing $basename.bam..."
+    samtools view -H -f 4 -F 8 $DATA_DIR/$basename.bam  | head -n 20
 
-    # ## Sorting and indexing
+    # # Sorting and indexing
     # echo "Sorting and indexing $basename.bam..."
     # samtools sort -o $OUT_DIR/$basename.sorted.bam -T $OUT_DIR/$basename.tmp -@ 4 $DATA_DIR/$basename.bam
     # samtools index $OUT_DIR/$basename.sorted.bam

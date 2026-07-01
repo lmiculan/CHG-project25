@@ -27,3 +27,7 @@ awk 'BEGIN {FS="\t"; OFS="\t"; print "chromosome", "start", "end", "gene", "log2
     NR>1 {print $1, $2, $3, ".", $7, "1.0"}' $OUTDIR/SCNA.copynumber.called > $OUTDIR/SCNA.copynumber.called.formatted.cns
 
 cnvkit.py segment $OUTDIR/SCNA.copynumber.called.formatted.cns -o $OUTDIR/SCNA.copynumber.called.segmented.cns
+
+# Plots
+cnvkit.py scatter $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.scatter.pdf
+cnvkit.py diagram $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.diagram.pdf
