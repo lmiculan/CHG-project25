@@ -1,4 +1,5 @@
 # i only used the code at the end of the file, the rest is just for reference.
+
 ####### Annotating variants from bcf
 
 java -Xmx4g -jar ../../../tools/snpEff/snpEff.jar -v hg19kg ../../06_VariantCalling/Data/Sample.BCF.recode.vcf -s Sample.BCF.recode.ann.html > Sample.BCF.recode.ann.vcf
@@ -25,6 +26,7 @@ cat Sample.BCF.recode.ann3.vcf | java -Xmx4g -jar ../../../tools/snpEff/SnpSift.
 
 
 # what i used
-java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/Somatic.snp.filtered.recode.vcf -s Somatic.snp.ann.html > Somatic.snp.ann.vcf
+java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/results/Control_SCV_filtered.recode.vcf -s Control.snp.ann.html > Control.snp.ann.vcf
+java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/results/Tumor_SCV_filtered.recode.vcf -s Tumor.snp.ann.html > Tumor.snp.ann.vcf
 
 

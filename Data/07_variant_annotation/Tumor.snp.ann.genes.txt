@@ -1,0 +1,464 @@
+# The following table is formatted as tab separated values. 
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_HIGH	variants_impact_LOW	variants_impact_MODERATE	variants_impact_MODIFIER	variants_effect_3_prime_UTR_variant	variants_effect_5_prime_UTR_premature_start_codon_gain_variant	variants_effect_5_prime_UTR_variant	variants_effect_downstream_gene_variant	variants_effect_intron_variant	variants_effect_missense_variant	variants_effect_non_coding_transcript_exon_variant	variants_effect_splice_acceptor_variant	variants_effect_splice_region_variant	variants_effect_stop_gained	variants_effect_synonymous_variant	variants_effect_upstream_gene_variant
+	.4214	uc010bbe.3		0	0	0	3	0	0	0	0	2	0	1	0	0	0	0	0
+	.4230	uc031qrm.1	protein_coding	0	1	0	11	0	0	1	3	0	0	0	0	0	0	1	7
+	.4246	uc010bdh.3		0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+	.4318	uc002adz.1		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+	.4319	uc010bfs.3	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+	.4446	uc002apt.1	protein_coding	0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+	.4744	uc010urr.1	protein_coding	0	0	0	8	0	0	0	2	3	0	0	0	0	0	0	3
+	.4745	uc010boo.1		0	0	0	15	0	0	0	3	9	0	0	0	0	0	0	3
+	.4746	uc010bop.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+	.4926	uc010bse.1		0	0	0	4	0	0	0	4	0	0	0	0	0	0	0	0
+	.4926	uc021tak.1		0	0	0	16	0	0	0	0	16	0	0	0	0	0	0	0
+	.4926	uc021tap.1		0	0	0	4	0	0	0	4	0	0	0	0	0	0	0	0
+	.4941	uc002cqx.3		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+	.4941	uc002cqy.3		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+	.5126	uc002dot.3		0	0	0	4	0	0	0	4	0	0	0	0	0	0	0	0
+	.5138	uc010bzb.2		0	0	0	4	0	0	0	0	4	0	0	0	0	0	0	0
+	.5155	uc002ebk.1		0	0	0	9	0	0	0	4	0	0	0	0	0	0	0	5
+	.5203	uc021tic.1		0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+	.5226	uc002eko.1		0	1	0	24	0	0	0	0	15	0	3	0	1	0	0	7
+	.5226	uc010ccq.1		0	1	0	30	0	0	0	0	21	0	6	0	1	0	0	4
+	.5226	uc010ccr.1		0	1	0	37	0	0	0	0	25	0	8	0	1	0	0	5
+	.5226	uc010ccs.1		0	1	0	28	0	0	0	0	20	0	5	0	1	0	0	4
+	.5241	uc002eok.1		0	0	0	2	0	0	0	0	0	0	2	0	0	0	0	0
+	.5241	uc010cdn.3		0	0	0	10	0	0	0	0	8	0	2	0	0	0	0	0
+	.5276	uc010vlj.1		0	0	0	6	0	0	0	1	4	0	1	0	0	0	0	0
+	.5478	uc021toz.1		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+	.5482	uc002ggp.3		0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+	.5482	uc010cmf.3		0	1	0	4	0	0	0	0	2	0	3	0	1	0	0	0
+	.5510	uc010vuq.2		0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0
+	.5522	uc021tqb.1		0	0	0	5	0	0	0	5	0	0	0	0	0	0	0	0
+	.5523	uc010cny.1		0	0	0	11	0	0	0	4	7	0	0	0	0	0	0	0
+	.5741	uc010ctc.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+	.5774	uc002hnp.1		0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+	.5774	uc002hnq.2	protein_coding	0	0	0	4	0	0	0	0	4	0	0	0	0	0	0	0
+	.5774	uc002hnr.1		0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+	.5782	uc021twf.1		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+	.5783	uc021twg.1		0	0	0	2	0	0	0	1	0	0	0	0	0	0	0	1
+	.5784	uc021twh.1	protein_coding	0	0	0	3	1	0	0	0	1	0	0	0	0	0	0	1
+	.5801	uc031raa.1		0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+	.5825	uc021txs.1		0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+	.5826	uc010cyf.1	protein_coding	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	1
+	.5840	uc010whd.3		0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+	.5906	uc010wlx.1		0	0	0	2	0	0	0	1	1	0	0	0	0	0	0	0
+	.5909	uc002iqk.3	protein_coding	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	3
+	.5910	uc021tzy.1		0	0	0	11	0	0	0	8	0	0	0	0	0	0	0	3
+	.5910	uc031rdc.1		0	1	0	28	0	0	0	1	23	0	4	0	1	0	0	1
+	.5910	uc031rdd.1		0	0	0	14	0	0	0	7	0	0	0	0	0	0	0	7
+	.5945	uc002ivz.3		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc002iwa.3		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc002iwb.3		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc002iwc.3		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc010dct.2		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc010dcu.2		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc010dcv.2		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc021uan.1		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc021uao.1		0	0	0	7	0	0	0	7	0	0	0	0	0	0	0	0
+	.5945	uc031rdh.1		0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	6
+	.5988	uc021ubr.2		0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	5
+	.5989	uc021ubs.1		0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	6
+	.5990	uc002jen.3		0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	9
+	.6077	uc002jwl.2		0	0	0	4	0	0	0	0	2	0	2	0	0	0	0	0
+	.6077	uc021uej.1		0	0	0	3	0	0	0	2	0	0	0	0	0	0	0	1
+	.6261	uc010xbe.1		0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+	.6329	uc010xdo.1		0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+	.6345	uc002lha.1		0	0	0	4	0	0	0	0	3	0	0	0	0	0	0	1
+	.6346	uc010dpl.2		0	0	0	4	0	0	0	1	3	0	0	0	0	0	0	0
+A0PJ48	A0PJ48	uc002dvb.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+A4FTZ9	A4FTZ9	uc010bcv.1	protein_coding	0	0	0	20	0	0	0	0	11	0	0	0	0	0	0	9
+A4UAE9	A4UAE9	uc031qwg.1	protein_coding	0	0	0	6	1	0	1	0	4	0	0	0	0	0	0	0
+A5PKV6	A5PKV6	uc010bva.3	protein_coding	0	1	0	6	0	0	0	4	3	0	0	0	1	0	0	0
+A6NFU8	A6NFU8	uc002bum.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+A8MUP8	A8MUP8	uc031rae.1	protein_coding	0	0	0	4	0	0	0	0	3	0	0	0	0	0	0	1
+B2RTY4	B2RTY4	uc002atl.5	protein_coding	0	1	2	11	0	0	0	0	11	2	0	0	0	0	1	0
+B2RTY4-3	B2RTY4-3	uc002ato.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+B2RTY4-4	B2RTY4-4	uc002atn.1	protein_coding	0	1	1	6	0	0	0	0	6	1	0	0	0	0	1	0
+B2RWP9	B2RWP9	uc010cnx.4	protein_coding	0	2	0	29	1	0	0	0	28	0	0	0	0	0	2	0
+B3KR45	B3KR45	uc002fmk.2	protein_coding	0	1	0	9	1	0	0	0	4	0	0	0	0	0	1	4
+B3KSR9	B3KSR9	uc002coq.3	protein_coding	0	1	1	7	0	0	0	0	4	1	0	0	0	0	1	3
+B3KVT9	B3KVT9	uc001zrp.3	protein_coding	0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+B4DES0	B4DES0	uc010whp.2	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+B4DF26	B4DF26	uc010uwe.2	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+B4DFY5	B4DFY5	uc010ujp.2	protein_coding	0	0	0	2	1	0	0	1	0	0	0	0	0	0	0	0
+B4DGQ0	B4DGQ0	uc010wdz.2	protein_coding	0	1	0	6	0	0	0	0	6	0	0	0	0	0	1	0
+B4DI41	B4DI41	uc010xdi.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+B4DI49	B4DI49	uc010vur.1	protein_coding	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+B4DIG6	B4DIG6	uc010wdb.2	protein_coding	0	1	0	3	0	0	0	0	3	0	0	0	0	0	1	0
+B4DIL8	B4DIL8	uc010uvw.2	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+B4DJI4	B4DJI4	uc010wdy.1	protein_coding	0	0	1	1	0	0	0	0	1	1	0	0	0	0	0	0
+B4DLK6	B4DLK6	uc010vtt.2	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+B4DLW8	B4DLW8	uc010wqa.1	protein_coding	0	0	0	9	0	0	0	0	6	0	0	0	0	0	0	3
+B4DTR1	B4DTR1	uc010wek.2	protein_coding	0	2	0	4	0	0	0	0	3	0	0	0	0	0	2	1
+B4DTS5	B4DTS5	uc010wbz.2	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+B4DVJ7	B4DVJ7	uc010vfi.2	protein_coding	0	1	1	5	0	0	1	4	0	1	0	0	0	0	1	0
+B4DZH5	B4DZH5	uc010ugm.1	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+B4DZP2	B4DZP2	uc010ugq.2	protein_coding	0	0	0	6	0	0	0	0	4	0	0	0	0	0	0	2
+B4DZP2	B4DZP2	uc010ugr.1	protein_coding	0	0	0	5	0	0	0	0	4	0	0	0	0	0	0	1
+B4E1W1	B4E1W1	uc010ugo.2	protein_coding	0	0	0	9	0	0	0	0	9	0	0	0	0	0	0	0
+B4E3N8	B4E3N8	uc031qwf.1	protein_coding	0	0	0	5	0	0	1	4	0	0	0	0	0	0	0	0
+B7Z2B8	B7Z2B8	uc010uvu.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+B7Z3E7	B7Z3E7	uc010udq.1	protein_coding	0	2	3	5	0	0	0	0	6	3	0	0	1	0	1	0
+B7Z5N5	B7Z5N5	uc010xdd.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+B7ZM88	B7ZM88	uc021tgf.1	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+C6EVS3	C6EVS3	uc010udf.1	protein_coding	0	0	1	41	1	0	0	0	31	1	0	0	0	0	0	9
+C6EVS4	C6EVS4	uc010udg.1	protein_coding	0	0	1	41	1	0	0	0	31	1	0	0	0	0	0	9
+C6YB45	C6YB45	uc010whm.2	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+C6YB46	C6YB46	uc010who.3	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+C9J5X1	C9J5X1	uc010bon.3	protein_coding	0	1	0	45	12	0	0	0	33	0	0	0	0	0	1	0
+E7ES00	E7ES00	uc002jfh.3	protein_coding	0	3	0	4	0	0	0	0	4	0	0	0	0	0	3	0
+E7ES00	E7ES00	uc010den.1	protein_coding	0	0	1	5	0	0	0	3	2	1	0	0	0	0	0	0
+E7ETR2	E7ETR2	uc010whl.2	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+E7EUM2	E7EUM2	uc002idc.1	protein_coding	0	0	0	5	0	0	0	0	5	0	0	0	0	0	0	0
+E9PBR7	E9PBR7	uc002awp.3	protein_coding	0	0	0	9	1	0	0	0	8	0	0	0	0	0	0	0
+E9PE29	E9PE29	uc001zpx.3	protein_coding	0	0	0	8	0	0	0	8	0	0	0	0	0	0	0	0
+E9PEP1	E9PEP1	uc010cvm.1	protein_coding	0	1	1	1	0	0	0	1	0	1	0	0	0	0	1	0
+E9PEP1	E9PEP1	uc010wdr.2	protein_coding	0	1	1	1	0	0	0	1	0	1	0	0	0	0	1	0
+E9PFE0	E9PFE0	uc002dak.4	protein_coding	0	1	2	31	1	0	0	1	29	2	0	0	0	0	1	0
+E9PGY0	E9PGY0	uc010ugn.1	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+E9PHR3	E9PHR3	uc010xcc.3	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+F1D8N9	F1D8N9	uc002hun.2	protein_coding	0	0	0	4	0	0	0	0	3	0	0	0	0	0	0	1
+F5GY10	F5GY10	uc010bft.3	protein_coding	0	0	0	9	0	0	0	0	9	0	0	0	0	0	0	0
+F5H1T4	F5H1T4	uc002hsl.3	protein_coding	0	3	0	3	0	0	0	0	3	0	0	0	0	0	3	0
+F5H1V8	F5H1V8	uc002kyh.4	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+F8VTL3	F8VTL3	uc002glm.4	protein_coding	0	2	0	29	1	0	0	0	28	0	0	0	0	0	2	0
+F8VY86	F8VY86	uc001zrq.4	protein_coding	0	2	3	7	0	0	0	0	8	3	0	0	1	0	1	0
+F8VY86	F8VY86	uc010udp.2	protein_coding	0	2	3	7	0	0	0	0	8	3	0	0	1	0	1	0
+G3XAC3	G3XAC3	uc010whn.2	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+H0Y4Z0	H0Y4Z0	uc010bsn.4	protein_coding	0	0	0	2	1	0	0	0	1	0	0	0	0	0	0	0
+H0YGE2	H0YGE2	uc021tiv.1	protein_coding	0	5	1	24	0	1	2	0	17	1	0	0	1	0	4	5
+H0YGE2	H0YGE2	uc021tiw.1	protein_coding	0	5	1	24	0	1	2	0	17	1	0	0	1	0	4	5
+H0YGH1	H0YGH1	uc002gks.3	protein_coding	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	8
+H0YGT6	H0YGT6	uc002ekr.1	protein_coding	0	1	0	18	1	0	1	0	11	0	0	0	1	0	1	5
+H0YK33	H0YK33	uc002bpn.4	protein_coding	0	0	1	7	1	0	0	3	3	1	0	0	0	0	0	0
+H0YL38	H0YL38	uc002adw.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+H0YNP8	H0YNP8	uc010ugp.2	protein_coding	0	0	0	6	0	0	0	0	4	0	0	0	0	0	0	2
+H3BMB5	H3BMB5	uc010buy.3	protein_coding	0	0	1	6	1	0	1	0	4	1	0	0	0	0	0	0
+H3BMM1	H3BMM1	uc010biq.4	protein_coding	0	1	1	6	1	0	0	1	4	1	0	0	0	0	1	0
+H3BNH2	H3BNH2	uc010cif.1	protein_coding	0	2	0	16	0	0	0	5	12	0	0	0	1	0	1	0
+H3BT57	H3BT57	uc002awj.1	protein_coding	0	0	0	9	5	0	0	0	4	0	0	0	0	0	0	0
+H3BUJ5	H3BUJ5	uc002awx.3	protein_coding	0	0	0	9	3	0	0	0	6	0	0	0	0	0	0	0
+H3BV44	H3BV44	uc002atk.3	protein_coding	0	0	1	9	0	0	2	0	7	1	0	0	0	0	0	0
+H3BV44	H3BV44	uc002atm.1	protein_coding	0	0	1	8	0	0	2	0	6	1	0	0	0	0	0	0
+H3BVG6	H3BVG6	uc010bcg.2	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+H6UMI1	H6UMI1	uc031qym.1	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+I3L161	I3L161	uc002ggq.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+J3KQF3	J3KQF3	uc002ict.3	protein_coding	1	0	1	4	0	0	0	0	4	1	0	0	0	1	0	0
+J3KRL0	J3KRL0	uc010wcb.2	protein_coding	0	0	0	2	0	0	0	1	1	0	0	0	0	0	0	0
+J3KRR7	J3KRR7	uc010cbs.1	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+J3KSE3	J3KSE3	uc010dcw.3	protein_coding	0	0	1	11	1	0	1	5	4	1	0	0	0	0	0	0
+J3KSE4	J3KSE4	uc002hqj.3	protein_coding	0	0	0	3	0	0	0	1	1	0	0	0	0	0	0	1
+J3KT39	J3KT39	uc010cxa.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+J3KT98	J3KT98	uc010cnw.1	protein_coding	0	0	1	7	0	0	0	3	2	1	0	0	0	0	0	2
+J3KTA4	J3KTA4	uc010deh.2	protein_coding	0	1	0	8	0	0	1	0	4	0	0	0	1	0	0	4
+J3QLU9	J3QLU9	uc010cwb.3	protein_coding	0	3	0	3	0	0	0	0	2	0	0	0	0	0	3	1
+J3QRK4	J3QRK4	uc002jfj.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+J3QRN6	J3QRN6	uc002hhp.1	protein_coding	0	1	0	3	0	0	0	0	4	0	0	0	1	0	0	0
+J3QSF1	J3QSF1	uc002jel.1	protein_coding	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	9
+K4DID9	K4DID9	uc010wdc.2	protein_coding	0	1	0	5	0	0	0	0	5	0	0	0	0	0	1	0
+NP_000079	NP_000079	uc002iqm.3	protein_coding	0	2	1	26	2	0	0	1	23	1	0	0	1	0	1	1
+NP_000237	NP_000237	uc002dai.4	protein_coding	0	2	5	27	1	0	0	1	25	5	0	0	0	0	2	0
+NP_001005862	NP_001005862	uc002hsm.3	protein_coding	0	3	0	3	0	0	0	0	3	0	0	0	0	0	3	0
+NP_001009944	NP_001009944	uc002cos.1	protein_coding	0	0	0	6	0	0	0	6	0	0	0	0	0	0	0	0
+NP_001035022	NP_001035022	uc002jdp.1	protein_coding	0	1	0	5	3	0	0	0	2	0	0	0	0	0	1	0
+NP_001073315	NP_001073315	uc002cvw.3	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+NP_001136077	NP_001136077	uc010wje.1	protein_coding	0	1	0	16	1	0	0	1	15	0	0	0	1	0	0	0
+NP_001137298	NP_001137298	uc010xcb.3	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+NP_001137298	NP_001137298	uc010xcd.3	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+NP_001138438	NP_001138438	uc002lhd.2	protein_coding	0	0	0	13	0	0	0	0	13	0	0	0	0	0	0	0
+NP_001138438	NP_001138438	uc002lhg.3	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+NP_001138438	NP_001138438	uc010xee.1	protein_coding	0	0	0	14	0	0	0	0	13	0	0	0	0	0	0	1
+NP_001158238	NP_001158238	uc002fcl.3	protein_coding	0	3	0	10	0	0	0	0	11	0	0	0	1	0	2	0
+NP_001161374	NP_001161374	uc002bun.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+NP_001164408	NP_001164408	uc002ebe.2	protein_coding	0	4	0	6	0	0	1	0	6	0	0	0	1	0	3	0
+NP_001191065	NP_001191065	uc002lem.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+NP_001191067	NP_001191067	uc021ukd.1	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+NP_001191069	NP_001191069	uc021uke.1	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+NP_001191070	NP_001191070	uc002leg.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+NP_001191072	NP_001191072	uc010xdj.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+NP_001230675	NP_001230675	uc010wqp.2	protein_coding	0	0	2	4	0	0	0	2	2	2	0	0	0	0	0	0
+NP_001245283	NP_001245283	uc010wjf.1	protein_coding	0	1	0	16	1	0	0	1	15	0	0	0	1	0	0	0
+NP_001253974	NP_001253974	uc002ibs.4	protein_coding	1	0	0	2	0	0	0	0	3	0	0	1	0	0	0	0
+NP_001258537	NP_001258537	uc010cvq.3	protein_coding	0	0	1	6	0	0	0	0	6	1	0	0	0	0	0	0
+NP_001263219	NP_001263219	uc031ref.1	protein_coding	0	0	0	8	0	0	0	0	8	0	0	0	0	0	0	0
+NP_004646	NP_004646	uc002jfi.3	protein_coding	0	3	0	4	0	0	0	0	4	0	0	0	0	0	3	0
+NP_005928	NP_005928	uc002hqi.4	protein_coding	0	1	1	3	1	0	0	0	2	1	0	0	0	0	1	0
+NP_005928	NP_005928	uc002hqk.4	protein_coding	0	1	0	3	1	1	1	0	1	0	0	0	0	0	0	0
+NP_009228	NP_009228	uc010cyx.3	protein_coding	1	0	1	4	0	0	0	0	4	1	0	0	0	1	0	0
+NP_114432	NP_114432	uc002izk.2	protein_coding	0	3	1	6	1	0	0	0	5	1	0	0	0	0	3	0
+NP_114432	NP_114432	uc002izl.1	protein_coding	0	2	1	4	0	0	0	2	2	1	0	0	0	0	2	0
+NP_115582	NP_115582	uc002ekq.1	protein_coding	0	1	0	20	1	0	2	0	11	0	0	0	1	0	0	6
+NP_851565	NP_851565	uc002dor.2	protein_coding	0	0	0	9	0	0	0	0	9	0	0	0	0	0	0	0
+NP_942135	NP_942135	uc002hnk.3	protein_coding	0	2	0	15	0	0	0	0	16	0	0	0	1	0	1	0
+NP_998827	NP_998827	uc002hzk.1	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+O00231	O00231	uc002hhm.4	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+O00231	O00231	uc010cta.2	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+O15067	O15067	uc002gkr.3	protein_coding	0	3	2	7	0	0	0	0	9	2	0	0	2	0	1	0
+O15067	O15067	uc010vuv.2	protein_coding	0	3	1	8	0	0	1	0	9	1	0	0	2	0	1	0
+O15530	O15530	uc002cqs.4	protein_coding	0	0	0	2	1	0	0	0	1	0	0	0	0	0	0	0
+O15530	O15530	uc002cqu.4	protein_coding	0	0	0	2	1	0	0	0	1	0	0	0	0	0	0	0
+O15530-4	O15530-4	uc002cqt.4	protein_coding	0	0	0	2	1	0	0	0	1	0	0	0	0	0	0	0
+O15534	O15534	uc002gkd.3	protein_coding	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+O43791	O43791	uc002ipb.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc002ipc.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc002ipd.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc002ipe.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc002ipf.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc002ipg.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O43791	O43791	uc010dbk.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+O75081	O75081	uc002fmm.2	protein_coding	0	3	0	24	1	0	0	0	24	0	0	0	1	0	2	0
+O75081	O75081	uc002fmn.2	protein_coding	0	2	0	21	0	0	0	4	18	0	0	0	1	0	1	0
+O75081-2	O75081-2	uc002fml.2	protein_coding	0	3	0	16	1	0	0	0	16	0	0	0	1	0	2	0
+O75971	O75971	uc002apu.1	protein_coding	0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+O94832	O94832	uc002hho.1	protein_coding	0	1	0	7	2	0	0	0	6	0	0	0	1	0	0	0
+O95166	O95166	uc002gfb.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+O95267	O95267	uc001zke.4	protein_coding	0	1	0	3	0	0	0	0	3	0	0	0	0	0	1	0
+O95267-2	O95267-2	uc001zkd.4	protein_coding	0	1	0	3	0	0	0	0	3	0	0	0	0	0	1	0
+O95267-3	O95267-3	uc010bbf.3	protein_coding	0	1	0	2	0	0	0	0	2	0	0	0	0	0	1	0
+O95267-5	O95267-5	uc010bbg.3	protein_coding	0	1	0	2	0	0	0	0	2	0	0	0	0	0	1	0
+O95424	O95424	uc002dal.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+O95476	O95476	uc002gfd.2	protein_coding	0	1	0	2	0	0	0	0	2	0	0	0	0	0	1	0
+O95476	O95476	uc002gfe.2	protein_coding	0	1	0	2	0	0	0	0	2	0	0	0	0	0	1	0
+P04626	P04626	uc002hso.3	protein_coding	0	3	0	3	0	0	0	0	2	0	0	0	0	0	3	1
+P04626	P04626	uc002hsp.3	protein_coding	0	2	0	4	0	0	1	0	2	0	0	0	0	0	2	1
+P04626-4	P04626-4	uc010cwa.3	protein_coding	0	3	0	3	0	0	0	0	3	0	0	0	0	0	3	0
+P08069	P08069	uc002bul.3	protein_coding	0	1	0	45	12	0	0	0	33	0	0	0	0	0	1	0
+P08069	P08069	uc010urq.2	protein_coding	0	0	0	20	0	0	0	2	18	0	0	0	0	0	0	0
+P0C7P0	P0C7P0	uc010wds.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+P10276	P10276	uc002huk.2	protein_coding	0	0	0	5	0	0	0	0	5	0	0	0	0	0	0	0
+P10276	P10276	uc002hul.4	protein_coding	0	0	0	5	0	0	0	0	5	0	0	0	0	0	0	0
+P10276	P10276	uc021txb.1	protein_coding	0	0	0	5	0	0	0	0	4	0	0	0	0	0	0	1
+P10276-3	P10276-3	uc010wfe.2	protein_coding	0	0	0	5	0	0	0	0	5	0	0	0	0	0	0	0
+P10644	P10644	uc002jhg.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P10644	P10644	uc002jhh.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P10644	P10644	uc002jhi.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P10644	P10644	uc002jhj.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P10644	P10644	uc002jhk.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P10644	P10644	uc002jhl.4	protein_coding	0	0	0	6	2	0	0	2	2	0	0	0	0	0	0	0
+P12830	P12830	uc002ewg.1	protein_coding	0	1	0	5	0	0	0	1	4	0	0	0	0	0	1	0
+P17844	P17844	uc002jej.2	protein_coding	0	0	0	9	0	0	0	0	6	0	0	0	0	0	0	3
+P17844	P17844	uc002jek.2	protein_coding	0	0	0	9	0	0	0	0	6	0	0	0	0	0	0	3
+P20807	P20807	uc001zpn.1	protein_coding	0	0	1	32	1	0	0	0	31	1	0	0	0	0	0	0
+P20807-2	P20807-2	uc001zpp.1	protein_coding	0	0	1	32	1	0	0	0	31	1	0	0	0	0	0	0
+P20807-3	P20807-3	uc001zpk.1	protein_coding	0	2	1	41	1	1	2	0	38	1	0	0	1	0	0	0
+P20807-3	P20807-3	uc001zpl.1	protein_coding	0	2	1	41	1	1	2	0	38	1	0	0	1	0	0	0
+P20807-3	P20807-3	uc001zpo.1	protein_coding	0	0	1	32	1	0	0	0	31	1	0	0	0	0	0	0
+P20807-4	P20807-4	uc001zpq.1	protein_coding	0	0	0	21	1	0	1	0	16	0	0	0	0	0	0	3
+P20807-5	P20807-5	uc001zpr.1	protein_coding	0	0	0	20	1	0	0	0	10	0	0	0	0	0	0	9
+P20807-5	P20807-5	uc001zps.1	protein_coding	0	0	0	20	1	0	0	0	10	0	0	0	0	0	0	9
+P20807-5	P20807-5	uc001zpt.1	protein_coding	0	0	0	20	1	0	0	0	10	0	0	0	0	0	0	9
+P27361	P27361	uc002dwr.3	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+P27361	P27361	uc002dws.3	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+P27361-2	P27361-2	uc002dwv.4	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+P27361-3	P27361-3	uc002dwt.3	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+P29376	P29376	uc001zoa.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+P29376-4	P29376-4	uc001zob.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+P29376-5	P29376-5	uc010ucx.1	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+P29590	P29590	uc002awv.3	protein_coding	0	1	0	11	0	0	0	0	11	0	0	0	0	0	1	0
+P29590	P29590	uc010ule.2	protein_coding	0	1	0	11	0	0	0	0	11	0	0	0	0	0	1	0
+P29590-11	P29590-11	uc002awu.3	protein_coding	0	1	0	11	0	0	0	0	11	0	0	0	0	0	1	0
+P29590-12	P29590-12	uc002aws.3	protein_coding	0	0	0	12	0	0	0	2	10	0	0	0	0	0	0	0
+P29590-13	P29590-13	uc002awo.3	protein_coding	0	0	2	7	1	0	0	0	6	2	0	0	0	0	0	0
+P29590-14	P29590-14	uc002awl.3	protein_coding	0	0	0	9	3	0	0	0	6	0	0	0	0	0	0	0
+P29590-14	P29590-14	uc002awt.3	protein_coding	0	0	0	12	0	0	0	2	10	0	0	0	0	0	0	0
+P29590-2	P29590-2	uc002awm.3	protein_coding	0	0	0	9	3	0	0	0	6	0	0	0	0	0	0	0
+P29590-4	P29590-4	uc002awn.3	protein_coding	0	0	0	9	3	0	0	0	6	0	0	0	0	0	0	0
+P29590-4	P29590-4	uc002awq.3	protein_coding	0	0	0	12	0	0	0	2	10	0	0	0	0	0	0	0
+P29590-5	P29590-5	uc002awr.3	protein_coding	0	0	0	12	0	0	0	2	10	0	0	0	0	0	0	0
+P29590-8	P29590-8	uc002awk.3	protein_coding	0	0	2	7	1	0	0	0	6	2	0	0	0	0	0	0
+P33076	P33076	uc002dag.2	protein_coding	0	1	5	18	1	0	0	6	11	5	0	0	0	0	1	0
+P33076	P33076	uc002daj.4	protein_coding	0	2	5	27	1	0	0	1	25	5	0	0	0	0	2	0
+P35580	P35580	uc002gll.4	protein_coding	0	2	0	29	1	0	0	0	28	0	0	0	0	0	2	0
+P35637	P35637	uc002ebf.3	protein_coding	0	4	0	6	0	0	1	0	6	0	0	0	1	0	3	0
+P35637-2	P35637-2	uc002ebh.3	protein_coding	0	4	0	6	0	0	1	0	6	0	0	0	1	0	3	0
+P38398	P38398	uc002icq.3	protein_coding	1	0	1	4	0	0	0	0	4	1	0	0	0	1	0	0
+P38398	P38398	uc002ide.1	protein_coding	1	0	1	2	0	0	0	1	0	1	0	0	0	1	0	1
+P38398	P38398	uc010cyy.1	protein_coding	1	0	1	2	0	0	0	1	1	1	0	0	0	1	0	0
+P38398	P38398	uc010cyz.2	protein_coding	1	0	1	2	0	0	0	1	1	1	0	0	0	1	0	0
+P38398	P38398	uc010cza.2	protein_coding	1	0	1	2	0	0	0	1	1	1	0	0	0	1	0	0
+P38398	P38398	uc010whs.1	protein_coding	1	0	1	2	0	0	0	1	1	1	0	0	0	1	0	0
+P38398	P38398	uc010wht.1	protein_coding	1	0	1	2	0	0	0	1	1	1	0	0	0	1	0	0
+P38398-2	P38398-2	uc002icp.4	protein_coding	1	0	1	4	0	0	0	0	4	1	0	0	0	1	0	0
+P38398-3	P38398-3	uc010whq.1	protein_coding	0	0	0	5	0	0	0	0	4	0	0	0	0	0	0	1
+P38398-3	P38398-3	uc010whr.1	protein_coding	0	0	0	5	0	0	0	0	5	0	0	0	0	0	0	0
+P38398-6	P38398-6	uc002icu.3	protein_coding	0	0	0	6	0	0	0	0	6	0	0	0	0	0	0	0
+P40259	P40259	uc002jdq.1	protein_coding	0	1	0	5	3	0	0	0	2	0	0	0	0	0	1	0
+P40259-2	P40259-2	uc002jdr.1	protein_coding	0	0	0	6	3	0	0	0	3	0	0	0	0	0	0	0
+P40763	P40763	uc002hzl.1	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+P40763	P40763	uc002hzn.1	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+P40763	P40763	uc010wgh.1	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+P40763-2	P40763-2	uc002hzm.1	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+P42229	P42229	uc002hzj.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+P42229	P42229	uc010cya.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+P49815	P49815	uc002con.3	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+P49815-3	P49815-3	uc002cop.3	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+P49815-4	P49815-4	uc010bsd.3	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+P49815-5	P49815-5	uc002coo.3	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+P49815-6	P49815-6	uc010uvv.2	protein_coding	0	1	1	14	0	0	0	0	14	1	0	0	0	0	1	0
+P55287	P55287	uc002eoi.3	protein_coding	0	0	2	8	1	0	0	0	7	2	0	0	0	0	0	0
+P55287	P55287	uc010vin.2	protein_coding	0	0	2	8	1	0	0	0	7	2	0	0	0	0	0	0
+P55287-2	P55287-2	uc002eoj.3	protein_coding	0	0	2	8	1	0	0	0	7	2	0	0	0	0	0	0
+P61289	P61289	uc002ibp.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+P61289	P61289	uc002ibr.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+P61289	P61289	uc031ram.1	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+P61289-2	P61289-2	uc002ibq.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+P62993	P62993	uc002jnx.4	protein_coding	0	1	0	2	1	0	0	0	2	0	0	0	1	0	0	0
+P62993-2	P62993-2	uc002jny.4	protein_coding	0	1	0	2	1	0	0	0	2	0	0	0	1	0	0	0
+P63272	P63272	uc002iwe.2	protein_coding	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	6
+P98161-3	P98161-3	uc002cot.1	protein_coding	0	0	0	6	0	0	0	6	0	0	0	0	0	0	0	0
+Q02223	Q02223	uc002dbv.3	protein_coding	0	1	1	5	0	0	1	0	4	1	0	0	0	0	1	0
+Q02750	Q02750	uc010bhq.3	protein_coding	0	0	0	3	1	0	0	1	1	0	0	0	0	0	0	0
+Q12888	Q12888	uc001zrs.3	protein_coding	0	2	3	7	0	0	0	0	8	3	0	0	1	0	1	0
+Q12888-2	Q12888-2	uc001zrr.4	protein_coding	0	2	3	7	0	0	0	0	8	3	0	0	1	0	1	0
+Q13085	Q13085	uc002hnm.3	protein_coding	0	2	0	17	0	0	0	0	18	0	0	0	1	0	1	0
+Q13085	Q13085	uc002hnn.3	protein_coding	0	2	0	17	0	0	0	0	18	0	0	0	1	0	1	0
+Q13085	Q13085	uc010cuz.3	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+Q13085-2	Q13085-2	uc002hnl.3	protein_coding	0	2	0	15	0	0	0	0	16	0	0	0	1	0	1	0
+Q13085-4	Q13085-4	uc002hno.3	protein_coding	0	2	0	17	0	0	0	0	18	0	0	0	1	0	1	0
+Q13470	Q13470	uc002ggi.4	protein_coding	0	1	2	2	0	0	0	0	2	2	0	0	1	0	1	0
+Q13470-2	Q13470-2	uc002ggj.4	protein_coding	0	1	2	2	0	0	0	0	2	2	0	0	1	0	1	0
+Q13485	Q13485	uc002lfb.4	protein_coding	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	1
+Q13485	Q13485	uc010xdp.2	protein_coding	0	0	0	3	0	0	0	0	2	0	0	0	0	0	0	1
+Q14847	Q14847	uc002hra.3	protein_coding	0	1	0	6	0	0	0	0	6	0	0	0	0	0	1	0
+Q15011	Q15011	uc002eke.2	protein_coding	0	0	0	6	1	0	1	0	4	0	0	0	0	0	0	0
+Q15011	Q15011	uc002ekh.1	protein_coding	0	0	0	6	1	0	0	0	4	0	0	0	0	0	0	1
+Q15011-2	Q15011-2	uc002ekf.2	protein_coding	0	0	0	6	1	0	1	0	4	0	0	0	0	0	0	0
+Q15011-3	Q15011-3	uc031qwh.1	protein_coding	0	0	0	6	1	0	1	0	4	0	0	0	0	0	0	0
+Q15029	Q15029	uc002ihn.2	protein_coding	0	1	0	16	1	0	0	1	15	0	0	0	1	0	0	0
+Q15029	Q15029	uc031rav.1	protein_coding	0	1	0	16	1	0	0	1	15	0	0	0	1	0	0	0
+Q15078	Q15078	uc002hhn.3	protein_coding	0	0	0	4	0	0	0	4	0	0	0	0	0	0	0	0
+Q15078	Q15078	uc010wca.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q15078	Q15078	uc021tux.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q15555	Q15555	uc002kyg.4	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q15555-2	Q15555-2	uc002kyf.2	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q15648	Q15648	uc002hrv.4	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+Q15648	Q15648	uc010wee.2	protein_coding	0	0	0	7	1	0	0	0	6	0	0	0	0	0	0	0
+Q15648-3	Q15648-3	uc002hru.2	protein_coding	0	0	0	7	0	0	0	0	7	0	0	0	0	0	0	0
+Q15796	Q15796	uc002lcy.4	protein_coding	0	0	0	3	2	0	0	0	1	0	0	0	0	0	0	0
+Q15796	Q15796	uc002lcz.4	protein_coding	0	0	0	3	2	0	0	0	1	0	0	0	0	0	0	0
+Q15796-2	Q15796-2	uc010xdc.3	protein_coding	0	0	0	3	2	0	0	0	1	0	0	0	0	0	0	0
+Q15911	Q15911	uc002fck.3	protein_coding	0	4	2	7	0	0	0	0	8	2	0	0	1	0	3	0
+Q1KLZ6	Q1KLZ6	uc010cyc.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q29675	Q29675	uc002dah.2	protein_coding	0	1	4	19	1	0	0	6	12	4	0	0	0	0	1	0
+Q29704	Q29704	uc010bup.1	protein_coding	0	0	2	22	0	0	0	3	19	2	0	0	0	0	0	0
+Q2TQ40	Q2TQ40	uc010buz.3	protein_coding	0	1	0	6	0	0	1	0	5	0	0	0	0	0	1	0
+Q4G112	Q4G112	uc002iwi.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q59EC8	Q59EC8	uc002lep.4	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q59EP6	Q59EP6	uc002lef.3	protein_coding	0	0	0	3	0	0	0	0	2	0	0	0	0	0	0	1
+Q59FY4	Q59FY4	uc010cuy.3	protein_coding	0	2	0	10	0	0	0	0	10	0	0	0	1	0	1	1
+Q59GQ8	Q59GQ8	uc002aww.1	protein_coding	0	0	0	4	1	0	0	2	1	0	0	0	0	0	0	0
+Q59GY7	Q59GY7	uc010cyb.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q59H57	Q59H57	uc002ebg.3	protein_coding	0	2	0	8	0	0	3	0	6	0	0	0	1	0	1	0
+Q5XLQ3	Q5XLQ3	uc010dpm.1	protein_coding	0	0	0	2	0	0	0	0	2	0	0	0	0	0	0	0
+Q5YLB2	Q5YLB2	uc002idd.3	protein_coding	1	0	1	2	1	0	0	0	1	1	0	0	0	1	0	0
+Q68D06	Q68D06	uc002hjk.1	protein_coding	0	3	2	3	0	0	1	0	3	2	0	0	1	0	2	0
+Q68D06	Q68D06	uc002hjl.2	protein_coding	0	3	2	3	0	0	0	0	4	2	0	0	1	0	2	0
+Q68D06	Q68D06	uc002hjm.2	protein_coding	0	3	2	3	0	0	0	0	4	2	0	0	1	0	2	0
+Q68D06	Q68D06	uc010wch.1	protein_coding	0	3	2	3	0	0	0	0	4	2	0	0	1	0	2	0
+Q68D06-2	Q68D06-2	uc010ctt.2	protein_coding	0	3	2	3	0	0	0	0	4	2	0	0	1	0	2	0
+Q68DV7	Q68DV7	uc002iwf.3	protein_coding	0	0	3	9	3	0	0	0	6	3	0	0	0	0	0	0
+Q68DV7	Q68DV7	uc002iwg.4	protein_coding	0	0	3	9	3	0	0	0	6	3	0	0	0	0	0	0
+Q68DV7	Q68DV7	uc002iwh.4	protein_coding	0	0	3	9	3	0	0	0	6	3	0	0	0	0	0	0
+Q68DV7-2	Q68DV7-2	uc010wnv.2	protein_coding	0	0	2	10	3	0	0	0	7	2	0	0	0	0	0	0
+Q6IN51	Q6IN51	uc010vus.1	protein_coding	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Q6P2Q9	Q6P2Q9	uc002fte.3	protein_coding	0	6	0	10	0	0	0	0	11	0	0	0	1	0	5	0
+Q6UUV7	Q6UUV7	uc002bpp.4	protein_coding	0	0	1	24	3	0	0	0	21	1	0	0	0	0	0	0
+Q6UUV7-3	Q6UUV7-3	uc002bpo.4	protein_coding	0	0	1	24	3	0	0	0	21	1	0	0	0	0	0	0
+Q70T18	Q70T18	uc010caj.1	protein_coding	0	1	0	6	0	0	0	1	1	0	0	0	0	0	1	4
+Q71MG5	Q71MG5	uc002jhn.3	protein_coding	0	0	2	4	0	0	0	2	2	2	0	0	0	0	0	0
+Q71RA7	Q71RA7	uc002awy.3	protein_coding	0	0	2	7	1	0	0	0	5	2	0	0	0	0	0	1
+Q7L5L3	Q7L5L3	uc002dwp.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q7L5L3	Q7L5L3	uc002dwq.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q86V37	Q86V37	uc010bzm.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q86WI3	Q86WI3	uc021tiu.1	protein_coding	0	4	3	36	1	0	0	0	31	3	0	0	2	0	4	4
+Q86WI3-2	Q86WI3-2	uc021tit.1	protein_coding	0	1	2	15	0	0	0	3	12	2	0	0	1	0	1	0
+Q8IYT2	Q8IYT2	uc002ezy.4	protein_coding	0	0	2	1	1	0	0	0	0	2	0	0	0	0	0	0
+Q8IYT2	Q8IYT2	uc002ezz.4	protein_coding	0	0	2	1	1	0	0	0	0	2	0	0	0	0	0	0
+Q8IYT2	Q8IYT2	uc010cga.3	protein_coding	0	0	2	1	1	0	0	0	0	2	0	0	0	0	0	0
+Q8IYT2	Q8IYT2	uc021tkr.1	protein_coding	0	0	2	1	0	0	0	1	0	2	0	0	0	0	0	0
+Q8N144	Q8N144	uc010cwz.3	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q8TE02	Q8TE02	uc002gfg.1	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+Q8TE02	Q8TE02	uc002gfh.1	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+Q8TE02	Q8TE02	uc002gfi.1	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+Q8TE02-2	Q8TE02-2	uc002gfj.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+Q8TE02-2	Q8TE02-2	uc010cmb.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+Q8TE02-3	Q8TE02-3	uc002gfk.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q8TET4	Q8TET4	uc001zpi.3	protein_coding	0	0	2	7	4	0	0	1	2	2	0	0	1	0	0	0
+Q8WVQ1	Q8WVQ1	uc002jwj.3	protein_coding	0	1	0	3	1	0	0	0	2	0	0	0	0	0	1	0
+Q8WVQ1	Q8WVQ1	uc002jwk.3	protein_coding	0	1	0	3	1	0	0	0	2	0	0	0	0	0	1	0
+Q8WVQ1	Q8WVQ1	uc002jwn.3	protein_coding	0	1	0	3	1	0	0	0	2	0	0	0	0	0	1	0
+Q92793	Q92793	uc002cvv.3	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q92889	Q92889	uc002dce.2	protein_coding	0	1	0	9	1	0	0	0	9	0	0	0	1	0	0	0
+Q92889	Q92889	uc010uyz.1	protein_coding	0	0	0	10	1	0	1	0	6	0	0	0	0	0	0	2
+Q96GE4	Q96GE4	uc002jem.3	protein_coding	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	9
+Q96GE4	Q96GE4	uc010wqb.2	protein_coding	0	0	0	9	0	0	0	0	0	0	0	0	0	0	0	9
+Q96IG2	Q96IG2	uc002hrt.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q96IG2-2	Q96IG2-2	uc010cvu.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q96JF6	Q96JF6	uc010cla.1	protein_coding	0	0	0	2	2	0	0	0	0	0	0	0	0	0	0	0
+Q96JF6	Q96JF6	uc021tol.1	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+Q96K83	Q96K83	uc002kvk.2	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+Q96K83	Q96K83	uc002kvl.2	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+Q96K83	Q96K83	uc010dly.2	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+Q96MK3	Q96MK3	uc002jho.3	protein_coding	0	0	2	4	0	0	0	2	2	2	0	0	0	0	0	0
+Q96NA2	Q96NA2	uc002ftd.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q96PU5	Q96PU5	uc002lgy.3	protein_coding	0	0	0	14	0	0	0	0	14	0	0	0	0	0	0	0
+Q96PU5-2	Q96PU5-2	uc002lgz.3	protein_coding	0	0	0	14	0	0	0	0	14	0	0	0	0	0	0	0
+Q96PU5-3	Q96PU5-3	uc002lhh.2	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+Q96PU5-5	Q96PU5-5	uc002lgx.3	protein_coding	0	0	0	14	0	0	0	0	14	0	0	0	0	0	0	0
+Q96PU5-6	Q96PU5-6	uc002lhe.2	protein_coding	0	0	0	13	0	0	0	0	13	0	0	0	0	0	0	0
+Q96PU5-7	Q96PU5-7	uc002lhc.2	protein_coding	0	0	0	13	0	0	0	0	13	0	0	0	0	0	0	0
+Q96PU5-9	Q96PU5-9	uc002lhb.2	protein_coding	0	0	0	13	0	0	0	0	13	0	0	0	0	0	0	0
+Q96PU5-9	Q96PU5-9	uc002lhf.3	protein_coding	0	0	0	10	0	0	0	0	10	0	0	0	0	0	0	0
+Q99081	Q99081	uc002aec.3	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+Q99081	Q99081	uc002aed.3	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+Q99081-2	Q99081-2	uc002aee.3	protein_coding	0	0	0	9	0	0	0	0	9	0	0	0	0	0	0	0
+Q99081-3	Q99081-3	uc002aea.3	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+Q99081-3	Q99081-3	uc002aeb.3	protein_coding	0	0	0	15	0	0	0	0	15	0	0	0	0	0	0	0
+Q9BRR6	Q9BRR6	uc002avg.4	protein_coding	0	2	1	3	1	0	0	0	2	1	0	0	0	0	2	0
+Q9BRR6	Q9BRR6	uc002avh.4	protein_coding	0	0	0	6	1	0	2	0	3	0	0	0	0	0	0	0
+Q9BRR6	Q9BRR6	uc010ukw.2	protein_coding	0	2	1	3	1	0	0	0	2	1	0	0	0	0	2	0
+Q9BRR6-2	Q9BRR6-2	uc002avf.4	protein_coding	0	2	1	3	1	0	0	0	2	1	0	0	0	0	2	0
+Q9BRR6-2	Q9BRR6-2	uc002avi.4	protein_coding	0	2	1	3	1	0	0	0	2	1	0	0	0	0	2	0
+Q9BRR6-4	Q9BRR6-4	uc002ave.4	protein_coding	0	0	0	5	1	0	0	0	1	0	0	0	0	0	0	3
+Q9BUL5	Q9BUL5	uc002gfa.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q9BUL5	Q9BUL5	uc010cma.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+Q9BWH6	Q9BWH6	uc001zod.3	protein_coding	0	3	4	14	1	0	0	0	13	4	0	0	0	0	3	0
+Q9H2Y7	Q9H2Y7	uc001zpu.3	protein_coding	0	0	0	8	0	0	0	8	0	0	0	0	0	0	0	0
+Q9H2Y7	Q9H2Y7	uc001zpv.3	protein_coding	0	0	0	8	0	0	0	8	0	0	0	0	0	0	0	0
+Q9H2Y7	Q9H2Y7	uc001zpw.3	protein_coding	0	0	0	8	0	0	0	8	0	0	0	0	0	0	0	0
+Q9HBE5	Q9HBE5	uc002doq.2	protein_coding	0	0	0	9	0	0	0	0	9	0	0	0	0	0	0	0
+Q9HBE5	Q9HBE5	uc002dos.2	protein_coding	0	0	0	8	0	0	0	0	8	0	0	0	0	0	0	0
+Q9NQC7	Q9NQC7	uc002egp.1	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q9NQC7	Q9NQC7	uc021tib.1	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q9NQC7-2	Q9NQC7-2	uc002egq.1	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q9NQC7-2	Q9NQC7-2	uc002egr.1	protein_coding	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0
+Q9NRY6	Q9NRY6	uc002ggm.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+Q9NRY6	Q9NRY6	uc002ggn.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+Q9NRY6	Q9NRY6	uc002ggo.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+Q9NRY6	Q9NRY6	uc002ggr.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+Q9NRY6	Q9NRY6	uc010cmg.2	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+Q9P0U4	Q9P0U4	uc002leq.4	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q9P0U4	Q9P0U4	uc010doy.3	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q9P0U4-2	Q9P0U4-2	uc002ler.4	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+Q9P298	Q9P298	uc002ihm.4	protein_coding	0	0	0	4	0	0	0	3	1	0	0	0	0	0	0	0
+Q9P298	Q9P298	uc031rau.1	protein_coding	0	0	0	4	0	0	0	3	1	0	0	0	0	0	0	0
+Q9UGJ1	Q9UGJ1	uc001zro.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+Q9UGJ1-2	Q9UGJ1-2	uc001zrn.3	protein_coding	0	0	0	2	0	0	0	2	0	0	0	0	0	0	0	0
+Q9UII8	Q9UII8	uc010cfg.1	protein_coding	0	1	0	5	0	0	0	1	4	0	0	0	0	0	1	0
+Q9UIS9	Q9UIS9	uc002lei.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9	Q9UIS9	uc010dow.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-2	Q9UIS9-2	uc002lel.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-4	Q9UIS9-4	uc002lej.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-5	Q9UIS9-5	uc002lek.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-6	Q9UIS9-6	uc002len.3	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-6	Q9UIS9-6	uc002leo.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-7	Q9UIS9-7	uc002leh.4	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-8	Q9UIS9-8	uc010dox.1	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UIS9-9	Q9UIS9-9	uc010xdk.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UK79	Q9UK79	uc002hsn.1	protein_coding	0	1	0	5	1	0	0	2	1	0	0	0	0	0	1	1
+Q9UL54	Q9UL54	uc002dva.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UL54-2	Q9UL54-2	uc002dvc.2	protein_coding	0	0	0	3	0	0	0	0	3	0	0	0	0	0	0	0
+Q9UL54-3	Q9UL54-3	uc002dvd.2	protein_coding	0	0	0	3	0	0	0	0	1	0	0	0	0	0	0	2
+Q9Y6X0	Q9Y6X0	uc010dni.3	protein_coding	0	1	1	16	0	0	0	0	16	1	0	0	0	0	1	0
+Q9Y6X0-2	Q9Y6X0-2	uc002lay.3	protein_coding	0	0	0	13	0	0	0	0	13	0	0	0	0	0	0	0
