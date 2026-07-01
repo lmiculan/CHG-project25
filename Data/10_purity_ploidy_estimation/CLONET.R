@@ -6,7 +6,7 @@ library(TPES)
 
 #setwd("../../10_PurityPloidyEstimation/")
 
-normal = fread("Normal.csv",data.table=F)
+normal = fread("Control.csv",data.table=F)
 normal$af = normal$altCount/normal$totalCount
 tumor = fread("Tumor.csv",data.table=F)
 tumor$af = tumor$altCount/tumor$totalCount
@@ -19,7 +19,7 @@ colnames(pileup.tumor) = c("chr","pos","ref","alt","af","cov")
 # this files have indications about SNPs (and others? not sure)
 
 # segmentation data
-seg.tb <- fread("../05_SomaticCopyNumberCalling/Data/SCNA.copynumber.called.seg",data.table=F)
+seg.tb <- fread("../05_segmentation/SCNA.copynumber.called.seg",data.table=F)
 # it's a segmentation file, coming from somatic copy number calling analysis. This represents different segments in our data.
 # sample, chromosome, coordinates, index of segment, mean of segment (gives indication if there's a copy number change, positive
 # means more copies and negative means less, and the magnitude indicates how big is the phenomenon)
@@ -69,7 +69,7 @@ print(check.plot)
 # sometimes you have samples that don't have copy number alterations.
 # you look at the allelic fraction of the mutations. If the mutations resides on one allele, the expected AF is 0.5.
 # since we're dealing with tumors, and the mutation is present only in 80% of the cells, the AF will be different.
-snv.reads = fread("../08_SomaticVariantCalling/Data/somatic.pm",data.table=F)
+snv.reads = fread("../08_somatic_variant/somatic.pm.vcf",data.table=F)
 snv.reads = snv.reads[which(snv.reads$somatic_status=="Somatic"),]
 snv.reads = snv.reads[,c("chrom","position","position","tumor_reads1","tumor_reads2")]
 colnames(snv.reads) = c("chr","start","end","ref.count","alt.count")
