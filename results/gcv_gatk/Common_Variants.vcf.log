@@ -4,28 +4,6 @@ VCFtools - 0.1.17
 
 Parameters as interpreted:
 	--vcf results/gcv_gatk/Control_GVC_filtered.bcf.recode.vcf
-	--chr 1
-	--chr 10
-	--chr 11
-	--chr 12
-	--chr 14
-	--chr 15
-	--chr 16
-	--chr 17
-	--chr 18
-	--chr 19
-	--chr 2
-	--chr 20
-	--chr 21
-	--chr 22
-	--chr 3
-	--chr 5
-	--chr 6
-	--chr 7
-	--chr 8
-	--chr 9
-	--chr X
-	--chr Y
 	--out results/gcv_gatk/Common_Variants.vcf
 	--diff results/gcv_gatk/Tumor_GVC_filtered.bcf.recode.vcf
 	--diff-site
@@ -52,9 +30,6 @@ Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,D
 Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,Description="Maximum likelihood expectation (MLE) for the allele frequency (not necessarily the same as the AF), for each ALT allele, in the same order as listed">
 Warning: Expected at least 2 parts in INFO entry: ID=RPA,Number=.,Type=Integer,Description="Number of times tandem repeat unit is repeated, for each allele (including reference)">
 Comparing sites in VCF files...
-Found 29878 sites common to both files.
-Found 11745 sites only in main file.
-Found 7118 sites only in second file.
-Found 0 non-matching overlapping sites.
-After filtering, kept 41623 out of a possible 41889 Sites
-Run Time = 1.00 seconds
+Error: Cannot determine chromosomal ordering of files, both files must contain the same chromosomes to use the diff functions.
+Found 5 in file 1 and 4 in file 2.
+Use option --not-chr to filter out chromosomes only found in one file.

@@ -19,26 +19,26 @@ for bam in $BAMS; do
     recal_table_after="data/bamprocessing/recal/${base}.recal_after.table"
     recal_bam="data/bamprocessing/recal/${base}.recal.bam"
 
-    $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
-        -T BaseRecalibrator \
-        -R "$REF" \
-        -I "$bam" \
-        --knownSites "$KNOWN_SITES" \
-        -o "$recal_table"
+    # $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
+    #     -T BaseRecalibrator \
+    #     -R "$REF" \
+    #     -I "$bam" \
+    #     --knownSites "$KNOWN_SITES" \
+    #     -o "$recal_table"
 
-    $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
-        -T PrintReads \
-        -R "$REF" \
-        -I "$bam" \
-        -BQSR "$recal_table" \
-        -o "$recal_bam"
+    # $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
+    #     -T PrintReads \
+    #     -R "$REF" \
+    #     -I "$bam" \
+    #     -BQSR "$recal_table" \
+    #     -o "$recal_bam"
 
-    $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
-        -T BaseRecalibrator \
-        -R "$REF" \
-        -I "$recal_bam" \
-        --knownSites "$KNOWN_SITES" \
-        -o "$recal_table_after"
+    # $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
+    #     -T BaseRecalibrator \
+    #     -R "$REF" \
+    #     -I "$recal_bam" \
+    #     --knownSites "$KNOWN_SITES" \
+    #     -o "$recal_table_after"
 
     $JAVA8 -Xmx4g -jar ~/bin/GenomeAnalysisTK.jar \
         -l DEBUG \
