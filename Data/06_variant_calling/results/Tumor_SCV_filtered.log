@@ -24,5 +24,5 @@ Warning: Expected at least 2 parts in INFO entry: ID=MLEAF,Number=A,Type=Float,D
 Warning: Expected at least 2 parts in INFO entry: ID=RPA,Number=.,Type=Integer,Description="Number of times tandem repeat unit is repeated, for each allele (including reference)">
 After filtering, kept 1 out of 1 Individuals
 Outputting VCF file...
-After filtering, kept 714 out of a possible 2537 Sites
+After filtering, kept 37259 out of a possible 108697 Sites
 Run Time = 0.00 seconds

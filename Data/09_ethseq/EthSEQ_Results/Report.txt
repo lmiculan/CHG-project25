@@ -1,0 +1,2 @@
+sample.id	pop	type	contribution
+Control.sorted.realigned.recalibrated.dedup	AFR	INSIDE	

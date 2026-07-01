@@ -5,8 +5,18 @@ samtools mpileup -q 1 -f ../../../../../annotations/human_g1k_v37.fasta ../04_de
 samtools mpileup -q 1 -f ../../../../../annotations/human_g1k_v37.fasta ../04_deduplication/Tumor.sorted.realigned.recalibrated.dedup.bam > Tumor.pileup
 
 ### running Varscan2
-java -jar ../../../../../tools/VarScan.v2.3.9.jar somatic Control.pileup Tumor.pileup --output-snp somatic.pm --output-indel somatic.indel --output-vcf 1
-# gave me 0 hits, stopped here :(
+java -jar ../../../../../tools/VarScan.v2.3.9.jar somatic Control.pileup Tumor.pileup --output-snp somatic.pm --output-indel somatic.indel --output-vcf 1 --strand-filter 0
+# 91429661 positions in tumor
+# 91190946 positions shared in normal
+# 18222265 had sufficient coverage for comparison
+# 18194018 were called Reference
+# 0 were mixed SNP-indel calls and filtered
+# 2518 were removed by the strand filter
+# 23481 were called Germline
+# 4187 were called LOH
+# 465 were called Somatic
+# 114 were called Unknown
+# 0 were called Variant
 
 ## Annotation
 java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar Annotate ../../../../../annotations/hapmap_3.3.b37.vcf  somatic.pm.vcf > somatic.pm.vcf.hapmap_ann.vcf
