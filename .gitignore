@@ -3,6 +3,7 @@
 *.bam
 *.sam
 *.vcf
+*.pileup
 *.rds
 Data/02_realignment_stats/BEDDepth_control.txt
 Data/02_realignment_stats/BEDDepth_tumor.txt
