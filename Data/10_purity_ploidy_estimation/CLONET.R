@@ -69,11 +69,30 @@ print(check.plot)
 # sometimes you have samples that don't have copy number alterations.
 # you look at the allelic fraction of the mutations. If the mutations resides on one allele, the expected AF is 0.5.
 # since we're dealing with tumors, and the mutation is present only in 80% of the cells, the AF will be different.
-snv.reads = fread("../08_somatic_variant/somatic.pm.vcf",data.table=F)
-snv.reads = snv.reads[which(snv.reads$somatic_status=="Somatic"),]
-snv.reads = snv.reads[,c("chrom","position","position","tumor_reads1","tumor_reads2")]
-colnames(snv.reads) = c("chr","start","end","ref.count","alt.count")
-snv.reads$sample = "Sample.1"
+snv.reads = fread("../08_somatic_variant/somatic.pm.vcf", data.table=F)
+colnames(snv.reads)[1] = "CHROM"          # drop the '#'
+
+# keep somatic sites only (SS=2 in the INFO field)
+snv.reads$SS = sub(".*SS=([0-9]+).*", "\\1", snv.reads$INFO)
+snv.reads = snv.reads[snv.reads$SS == "2", ]
+
+# decode RD (ref) and AD (alt) from the TUMOR column using the FORMAT keys
+tumor_vals = strsplit(snv.reads$TUMOR,  ":")
+fmt_keys   = strsplit(snv.reads$FORMAT, ":")
+get_field = function(vals, keys, name) as.numeric(vals[match(name, keys)])
+
+snv.reads = data.frame(
+  chr       = snv.reads$CHROM,
+  start     = snv.reads$POS,
+  end       = snv.reads$POS,
+  ref.count = mapply(get_field, tumor_vals, fmt_keys, MoreArgs=list(name="RD")),
+  alt.count = mapply(get_field, tumor_vals, fmt_keys, MoreArgs=list(name="AD")),
+  sample    = "Sample.1",
+  stringsAsFactors = FALSE
+)
+
+seg.tb$ID <- "Sample.1"
+pl.table$sample <- "Sample.1"
 
 # we need the segmentation file because of reasons
 TPES_purity(ID = "Sample.1", SEGfile = seg.tb,
