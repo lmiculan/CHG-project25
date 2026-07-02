@@ -29,4 +29,7 @@ cat Sample.BCF.recode.ann3.vcf | java -Xmx4g -jar ../../../tools/snpEff/SnpSift.
 java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/results/Control_SCV_filtered.recode.vcf -s Control.snp.ann.html > Control.snp.ann.vcf
 java -Xmx4g -jar ../../../../../tools/snpEff/snpEff.jar -v hg19kg ../06_variant_calling/results/Tumor_SCV_filtered.recode.vcf -s Tumor.snp.ann.html > Tumor.snp.ann.vcf
 
-
+cat Control.snp.ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(ANN[ANY].IMPACT = 'HIGH') & (DP > 20) & (exists ID)"
+cat Control.snp.ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(exists CLNSIG)"
+cat Tumor.snp.ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(ANN[ANY].IMPACT = 'HIGH') & (DP > 20) & (exists ID)"
+cat Tumor.snp.ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(exists CLNSIG)"
