@@ -1,0 +1,2 @@
+Somatic	15	102293892	N:C[CC>TT]A	-1
+Somatic	15	102302964	N:T[TC>AT]T	-1
