@@ -27,8 +27,13 @@ mkdir -p $OUTDIR
 # awk 'BEGIN {FS="\t"; OFS="\t"; print "chromosome", "start", "end", "gene", "log2", "weight"}
 #     NR>1 {print $1, $2, $3, ".", $7, "1.0"}' $OUTDIR/SCNA.copynumber.called > $OUTDIR/SCNA.copynumber.called.formatted.cns
 
-cnvkit.py segment $OUTDIR/SCNA.copynumber.called.formatted.cns -o $OUTDIR/SCNA.copynumber.called.segmented.cns
+#cnvkit.py segment $OUTDIR/SCNA.copynumber.called.formatted.cns -o $OUTDIR/SCNA.copynumber.called.segmented.cns
+
+# Export to SEG format for downstream analysis
+cnvkit.py export seg \
+    $OUTDIR/SCNA.copynumber.called.segmented.cns \
+    -o $OUTDIR/SCNA.copynumber.called.segmented.seg
 
 # Plots
-cnvkit.py scatter $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.scatter.pdf
-cnvkit.py diagram $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.diagram.pdf
+#cnvkit.py scatter $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.scatter.pdf
+#cnvkit.py diagram $OUTDIR/SCNA.copynumber.called.segmented.cns -o $OUTDIR/SCNA.copynumber.called.segmented.diagram.pdf
