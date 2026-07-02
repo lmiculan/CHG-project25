@@ -22,15 +22,9 @@ java -jar ../../../../../tools/VarScan.v2.3.9.jar somatic Control.pileup Tumor.p
 java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar Annotate ../../../../../annotations/hapmap_3.3.b37.vcf  somatic.pm.vcf > somatic.pm.vcf.hapmap_ann.vcf
 
 ## Filtering vcf
-cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(POS = 1896100)"
-cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(exists ID) & ( ID =~ 'rs' )" > somatic.pm.onlySNPs.vcf
-cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "!(exists ID) & !( ID =~ 'rs' )" > somatic.pm.noSNPs.vcf
-
-
-
-
-
-
-
-
+#cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(POS = 1896100)"
+#cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(exists ID) & ( ID =~ 'rs' )" > somatic.pm.onlySNPs.vcf
+#cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "!(exists ID) & !( ID =~ 'rs' )" > somatic.pm.noSNPs.vcf
+cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(ANN[ANY].IMPACT = 'HIGH') & (DP > 20) & (exists ID)" > somatic.pm.high_impact.vcf
+cat somatic.pm.vcf.hapmap_ann.vcf | java -Xmx4g -jar ../../../../../tools/snpEff/SnpSift.jar filter "(exists CLNSIG)" > somatic.pm.clnsig.vcf
 

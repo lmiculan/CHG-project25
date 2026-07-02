@@ -69,7 +69,7 @@ print(check.plot)
 # sometimes you have samples that don't have copy number alterations.
 # you look at the allelic fraction of the mutations. If the mutations resides on one allele, the expected AF is 0.5.
 # since we're dealing with tumors, and the mutation is present only in 80% of the cells, the AF will be different.
-snv.reads = fread("../08_somatic_variant/somatic.pm.vcf", data.table=F)
+snv.reads = fread("../08_somatic_variant/somatic.pm.vcf.hapmap_ann.vcf", data.table=F)
 colnames(snv.reads)[1] = "CHROM"          # drop the '#'
 
 # keep somatic sites only (SS=2 in the INFO field)
