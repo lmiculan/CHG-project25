@@ -9,3 +9,6 @@ data/annotations/human_g1k_v37.fasta
 
 !results/scv_gatk/Tumor_SCV_filtered.bcf.recode.vcf
 !results/scv_gatk/Control_SCV_filtered.bcf.recode.vcf
+
+!results/svc2/somatic.snvs.intersect.vcf
+!results/svc2/somatic.indels.intersect.vcf
