@@ -1,0 +1,93 @@
+(dp0
+S'isShellCmd'
+p1
+I00
+sS'cmd'
+p2
+(lp3
+S'/home/miculanl/bin/strelka-2.9.10/libexec/bgzf_cat'
+p4
+aS'-o'
+p5
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/results/variants/somatic.snvs.vcf.gz'
+p6
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0000.vcf.gz'
+p7
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0001.vcf.gz'
+p8
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0002.vcf.gz'
+p9
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0003.vcf.gz'
+p10
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0004.vcf.gz'
+p11
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0005.vcf.gz'
+p12
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0006.vcf.gz'
+p13
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0007.vcf.gz'
+p14
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_014_15_0008.vcf.gz'
+p15
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0000.vcf.gz'
+p16
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0001.vcf.gz'
+p17
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0002.vcf.gz'
+p18
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0003.vcf.gz'
+p19
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0004.vcf.gz'
+p20
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0005.vcf.gz'
+p21
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0006.vcf.gz'
+p22
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_015_16_0007.vcf.gz'
+p23
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0000.vcf.gz'
+p24
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0001.vcf.gz'
+p25
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0002.vcf.gz'
+p26
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0003.vcf.gz'
+p27
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0004.vcf.gz'
+p28
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0005.vcf.gz'
+p29
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0006.vcf.gz'
+p30
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0000.vcf.gz'
+p31
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0001.vcf.gz'
+p32
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0002.vcf.gz'
+p33
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0003.vcf.gz'
+p34
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0004.vcf.gz'
+p35
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0005.vcf.gz'
+p36
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_017_18_0006.vcf.gz'
+p37
+asS'errFile'
+p38
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p39
+sS'outFile'
+p40
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p41
+sS'env'
+p42
+NsS'nCores'
+p43
+I1
+sS'cwd'
+p44
+S''
+p45
+s.

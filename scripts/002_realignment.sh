@@ -28,4 +28,5 @@ for bam in $BAMS; do
         -I "$bam" \
         -targetIntervals "$intervals" \
         -o "$realigned"
+    
 done

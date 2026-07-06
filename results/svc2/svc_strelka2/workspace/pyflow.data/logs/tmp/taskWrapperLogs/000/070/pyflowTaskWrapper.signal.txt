@@ -1,0 +1,4 @@
+[2026-07-05T17:18:34.177349Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] wrapperStart
+[2026-07-05T17:18:34.193379Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskStart
+[2026-07-05T17:18:34.223249Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskExitCode 0
+[2026-07-05T17:18:34.225762Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+mergeRunStats] [wrapperSignal] taskElapsedSec 0

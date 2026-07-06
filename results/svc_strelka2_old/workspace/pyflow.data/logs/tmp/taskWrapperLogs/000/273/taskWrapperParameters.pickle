@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/home/miculanl/bin/strelka-2.9.10/libexec/bgzip" "/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_005_6_0012.vcf" && "/home/miculanl/bin/strelka-2.9.10/libexec/bgzip" "/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_005_6_0012.vcf"'
+p3
+sS'errFile'
+p4
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

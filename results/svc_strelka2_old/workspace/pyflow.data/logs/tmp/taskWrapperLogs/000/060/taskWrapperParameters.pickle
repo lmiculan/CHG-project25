@@ -1,0 +1,147 @@
+(dp0
+S'isShellCmd'
+p1
+I00
+sS'cmd'
+p2
+(lp3
+S'/home/miculanl/bin/strelka-2.9.10/libexec/cat.py'
+p4
+aS'--output'
+p5
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt'
+p6
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_000_1'
+p7
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_001_2'
+p8
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_002_3'
+p9
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_003_4'
+p10
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_004_5'
+p11
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_005_6'
+p12
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_006_7'
+p13
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_007_8'
+p14
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_008_9'
+p15
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_009_10'
+p16
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_010_11'
+p17
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_011_12'
+p18
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_012_13'
+p19
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_013_14'
+p20
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_014_15'
+p21
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_015_16'
+p22
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_016_17'
+p23
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_017_18'
+p24
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_018_19'
+p25
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_019_20'
+p26
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_020_21'
+p27
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_021_22'
+p28
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_022_X'
+p29
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_023_Y'
+p30
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_024_MT_to_031_GL000235_1'
+p31
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_032_GL000201_1_to_036_GL000203_1'
+p32
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_037_GL000246_1_to_041_GL000244_1'
+p33
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_042_GL000238_1_to_045_GL000232_1'
+p34
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_046_GL000206_1_to_049_GL000241_1'
+p35
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_050_GL000243_1_to_053_GL000237_1'
+p36
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_054_GL000233_1_to_055_GL000204_1'
+p37
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_056_GL000198_1_to_057_GL000208_1'
+p38
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_058_GL000191_1'
+p39
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_059_GL000227_1'
+p40
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_060_GL000228_1'
+p41
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_061_GL000214_1'
+p42
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_062_GL000221_1'
+p43
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_063_GL000209_1'
+p44
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_064_GL000218_1'
+p45
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_065_GL000220_1'
+p46
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_066_GL000213_1'
+p47
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_067_GL000211_1'
+p48
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_068_GL000199_1'
+p49
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_069_GL000217_1'
+p50
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_070_GL000216_1'
+p51
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_071_GL000215_1'
+p52
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_072_GL000205_1'
+p53
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_073_GL000219_1'
+p54
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_074_GL000224_1'
+p55
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_075_GL000223_1'
+p56
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_076_GL000195_1'
+p57
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_077_GL000212_1'
+p58
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_078_GL000222_1'
+p59
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_079_GL000200_1'
+p60
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_080_GL000193_1'
+p61
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_081_GL000194_1'
+p62
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_082_GL000225_1'
+p63
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/chromDepth.tsv.tmpdir/chromDepth.tsv.000.txt.tmpdir/chromDepth.tsv.000.txt_083_GL000192_1'
+p64
+asS'errFile'
+p65
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p66
+sS'outFile'
+p67
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p68
+sS'env'
+p69
+NsS'nCores'
+p70
+I1
+sS'cwd'
+p71
+S''
+p72
+s.

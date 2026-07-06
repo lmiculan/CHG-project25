@@ -1,0 +1,25 @@
+
+VCFtools - 0.1.17
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--gzvcf results/svc_strelka2/results/variants/somatic.indels.vcf.gz
+	--recode-INFO-all
+	--max-meanDP 200
+	--min-meanDP 5
+	--out results/svc_strelka2/results/variants/somatic.indels.filtered.vcf.gz
+	--recode
+
+Using zlib version: 1.3.2
+Warning: Expected at least 2 parts in INFO entry: ID=QSI,Number=1,Type=Integer,Description="Quality score for any somatic variant, ie. for the ALT haplotype to be present at a significantly different frequency in the tumor and normal">
+Warning: Expected at least 2 parts in INFO entry: ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+Warning: Expected at least 2 parts in INFO entry: ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+Warning: Expected at least 2 parts in INFO entry: ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+Warning: Expected at least 2 parts in INFO entry: ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+Warning: Expected at least 2 parts in FORMAT entry: ID=TAR,Number=2,Type=Integer,Description="Reads strongly supporting alternate allele for tiers 1,2">
+Warning: Expected at least 2 parts in FORMAT entry: ID=TIR,Number=2,Type=Integer,Description="Reads strongly supporting indel allele for tiers 1,2">
+Warning: Expected at least 2 parts in FORMAT entry: ID=TOR,Number=2,Type=Integer,Description="Other reads (weak support or insufficient indel breakpoint overlap) for tiers 1,2">
+After filtering, kept 2 out of 2 Individuals
+Outputting VCF file...
+After filtering, kept 1 out of a possible 1 Sites
+Run Time = 0.00 seconds

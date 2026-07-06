@@ -1,0 +1,33 @@
+(dp0
+S'isShellCmd'
+p1
+I00
+sS'cmd'
+p2
+(lp3
+S'/home/miculanl/bin/strelka-2.9.10/libexec/tabix'
+p4
+aS'-p'
+p5
+aS'vcf'
+p6
+aS'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/results/variants/somatic.snvs.vcf.gz'
+p7
+asS'errFile'
+p8
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p9
+sS'outFile'
+p10
+S'/run/media/miculanl/E87A653C7A6508A0/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p11
+sS'env'
+p12
+NsS'nCores'
+p13
+I1
+sS'cwd'
+p14
+S''
+p15
+s.

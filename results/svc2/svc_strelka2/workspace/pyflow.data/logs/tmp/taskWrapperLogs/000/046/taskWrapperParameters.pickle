@@ -1,0 +1,26 @@
+(dp0
+S'isShellCmd'
+p1
+I01
+sS'cmd'
+p2
+S'"/home/miculanl/bin/strelka-2.9.10/libexec/bgzip" "/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.snvs.unfiltered.chromId_016_17_0004.vcf" && "/home/miculanl/bin/strelka-2.9.10/libexec/bgzip" "/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/genomeSegment.tmpdir/somatic.indels.unfiltered.chromId_016_17_0004.vcf"'
+p3
+sS'errFile'
+p4
+S'/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stderr_log.txt'
+p5
+sS'outFile'
+p6
+S'/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/pyflow.data/logs/pyflow_tasks_stdout_log.txt'
+p7
+sS'env'
+p8
+NsS'nCores'
+p9
+I1
+sS'cwd'
+p10
+S''
+p11
+s.

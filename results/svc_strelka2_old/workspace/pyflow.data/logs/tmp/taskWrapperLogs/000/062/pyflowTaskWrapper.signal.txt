@@ -1,0 +1,4 @@
+[2026-07-02T18:47:02.341769Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] [wrapperSignal] wrapperStart
+[2026-07-02T18:47:02.350365Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] [wrapperSignal] taskStart
+[2026-07-02T18:47:02.357470Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] [wrapperSignal] taskExitCode 0
+[2026-07-02T18:47:02.359833Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_removeTmpDir] [wrapperSignal] taskElapsedSec 0
