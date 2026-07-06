@@ -308,3 +308,51 @@
 [2026-07-05T17:18:56.870137Z] [FORSAKEN] [10919_1] [WorkflowRunner] 
 [2026-07-05T17:18:56.871899Z] [FORSAKEN] [10919_1] [WorkflowRunner] Workflow successfully completed all tasks
 [2026-07-05T17:18:56.873325Z] [FORSAKEN] [10919_1] [WorkflowRunner] Elapsed time for full workflow: 168 sec
+[2026-07-06T21:33:43.677311Z] [FORSAKEN] [10064_1] [WorkflowRunner] Initiating pyFlow run
+[2026-07-06T21:33:43.680787Z] [FORSAKEN] [10064_1] [WorkflowRunner] pyFlowClientWorkflowClass: StrelkaSomaticWorkflow
+[2026-07-06T21:33:43.681821Z] [FORSAKEN] [10064_1] [WorkflowRunner] pyFlowVersion: 1.1.20
+[2026-07-06T21:33:43.683025Z] [FORSAKEN] [10064_1] [WorkflowRunner] pythonVersion: 2.7.18.final.0
+[2026-07-06T21:33:43.684037Z] [FORSAKEN] [10064_1] [WorkflowRunner] WorkingDir: '/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25'
+[2026-07-06T21:33:43.685184Z] [FORSAKEN] [10064_1] [WorkflowRunner] ProcessCmdLine: 'results/svc2/svc_strelka2/runWorkflow.py -m local -j 4'
+[2026-07-06T21:33:43.685934Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] mode: local
+[2026-07-06T21:33:43.687917Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] nCores: 4
+[2026-07-06T21:33:43.688801Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] memMb: 15932
+[2026-07-06T21:33:43.689580Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] dataDir: /mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/pyflow.data
+[2026-07-06T21:33:43.690264Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] isDryRun: False
+[2026-07-06T21:33:43.691180Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] isContinue: True
+[2026-07-06T21:33:43.692043Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] isForceContinue: True
+[2026-07-06T21:33:43.693060Z] [FORSAKEN] [10064_1] [WorkflowRunner] [RunParameters] mailTo: ''
+[2026-07-06T21:33:43.694357Z] [FORSAKEN] [10064_1] [TaskRunner:masterWorkflow] Starting task specification for master workflow
+[2026-07-06T21:33:43.695194Z] [FORSAKEN] [10064_1] [StrelkaSomaticWorkflow] Initiating Strelka somatic workflow version: 2.9.10
+[2026-07-06T21:33:43.697101Z] [FORSAKEN] [10064_1] [WorkflowRunner] Adding sub-workflow task 'CallGenome' to master workflow
+[2026-07-06T21:33:43.698720Z] [FORSAKEN] [10064_1] [TaskRunner:masterWorkflow] Finished task specification for master workflow
+[2026-07-06T21:33:43.702038Z] [FORSAKEN] [10064_1] [WorkflowRunner] Strelka somatic workflow successfully completed.
+[2026-07-06T21:33:43.702038Z] [FORSAKEN] [10064_1] [WorkflowRunner] 
+[2026-07-06T21:33:43.702038Z] [FORSAKEN] [10064_1] [WorkflowRunner] 	workflow version: 2.9.10
+[2026-07-06T21:33:43.702886Z] [FORSAKEN] [10064_1] [WorkflowRunner] 
+[2026-07-06T21:33:43.703740Z] [FORSAKEN] [10064_1] [WorkflowRunner] Workflow successfully completed all tasks
+[2026-07-06T21:33:43.704497Z] [FORSAKEN] [10064_1] [WorkflowRunner] Elapsed time for full workflow: 0 sec
+[2026-07-06T21:34:01.188081Z] [FORSAKEN] [10211_1] [WorkflowRunner] Initiating pyFlow run
+[2026-07-06T21:34:01.191124Z] [FORSAKEN] [10211_1] [WorkflowRunner] pyFlowClientWorkflowClass: StrelkaSomaticWorkflow
+[2026-07-06T21:34:01.192510Z] [FORSAKEN] [10211_1] [WorkflowRunner] pyFlowVersion: 1.1.20
+[2026-07-06T21:34:01.193451Z] [FORSAKEN] [10211_1] [WorkflowRunner] pythonVersion: 2.7.18.final.0
+[2026-07-06T21:34:01.194287Z] [FORSAKEN] [10211_1] [WorkflowRunner] WorkingDir: '/mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25'
+[2026-07-06T21:34:01.195282Z] [FORSAKEN] [10211_1] [WorkflowRunner] ProcessCmdLine: 'results/svc2/svc_strelka2/runWorkflow.py -m local -j 4'
+[2026-07-06T21:34:01.196062Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] mode: local
+[2026-07-06T21:34:01.198406Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] nCores: 4
+[2026-07-06T21:34:01.199344Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] memMb: 15932
+[2026-07-06T21:34:01.200169Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] dataDir: /mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/results/svc2/svc_strelka2/workspace/pyflow.data
+[2026-07-06T21:34:01.200989Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] isDryRun: False
+[2026-07-06T21:34:01.201930Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] isContinue: True
+[2026-07-06T21:34:01.202878Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] isForceContinue: True
+[2026-07-06T21:34:01.203780Z] [FORSAKEN] [10211_1] [WorkflowRunner] [RunParameters] mailTo: ''
+[2026-07-06T21:34:01.206258Z] [FORSAKEN] [10211_1] [TaskRunner:masterWorkflow] Starting task specification for master workflow
+[2026-07-06T21:34:01.207399Z] [FORSAKEN] [10211_1] [StrelkaSomaticWorkflow] Initiating Strelka somatic workflow version: 2.9.10
+[2026-07-06T21:34:01.208817Z] [FORSAKEN] [10211_1] [WorkflowRunner] Adding sub-workflow task 'CallGenome' to master workflow
+[2026-07-06T21:34:01.211519Z] [FORSAKEN] [10211_1] [TaskRunner:masterWorkflow] Finished task specification for master workflow
+[2026-07-06T21:34:01.222695Z] [FORSAKEN] [10211_1] [WorkflowRunner] Strelka somatic workflow successfully completed.
+[2026-07-06T21:34:01.222695Z] [FORSAKEN] [10211_1] [WorkflowRunner] 
+[2026-07-06T21:34:01.222695Z] [FORSAKEN] [10211_1] [WorkflowRunner] 	workflow version: 2.9.10
+[2026-07-06T21:34:01.224084Z] [FORSAKEN] [10211_1] [WorkflowRunner] 
+[2026-07-06T21:34:01.225031Z] [FORSAKEN] [10211_1] [WorkflowRunner] Workflow successfully completed all tasks
+[2026-07-06T21:34:01.225886Z] [FORSAKEN] [10211_1] [WorkflowRunner] Elapsed time for full workflow: 0 sec

@@ -1,4 +1,0 @@
-[2026-07-02T18:49:05.856010Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_071_GL000215_1_0000] [wrapperSignal] wrapperStart
-[2026-07-02T18:49:05.865314Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_071_GL000215_1_0000] [wrapperSignal] taskStart
-[2026-07-02T18:49:05.967915Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_071_GL000215_1_0000] [wrapperSignal] taskExitCode 0
-[2026-07-02T18:49:05.969617Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+callGenomeSegment_chromId_071_GL000215_1_0000] [wrapperSignal] taskElapsedSec 0

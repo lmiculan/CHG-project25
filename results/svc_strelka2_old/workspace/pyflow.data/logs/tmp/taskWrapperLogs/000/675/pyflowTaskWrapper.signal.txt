@@ -1,4 +1,0 @@
-[2026-07-02T18:51:06.406583Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] [wrapperSignal] wrapperStart
-[2026-07-02T18:51:06.425668Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] [wrapperSignal] taskStart
-[2026-07-02T18:51:06.442495Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] [wrapperSignal] taskExitCode 0
-[2026-07-02T18:51:06.443879Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:CallGenome+SNV_concat_vcf] [wrapperSignal] taskElapsedSec 0

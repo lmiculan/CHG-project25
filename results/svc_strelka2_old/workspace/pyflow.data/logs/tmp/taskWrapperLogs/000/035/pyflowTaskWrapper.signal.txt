@@ -1,4 +1,0 @@
-[2026-07-02T18:46:56.287492Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_059_GL000227_1] [wrapperSignal] wrapperStart
-[2026-07-02T18:46:56.295781Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_059_GL000227_1] [wrapperSignal] taskStart
-[2026-07-02T18:46:56.308048Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_059_GL000227_1] [wrapperSignal] taskExitCode 0
-[2026-07-02T18:46:56.309445Z] [FORSAKEN] [9871_1] [pyflowTaskWrapper:getChromDepth_sample000_estimateChromDepth_059_GL000227_1] [wrapperSignal] taskElapsedSec 0
