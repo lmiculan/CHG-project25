@@ -1,0 +1,207 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##source=VarScan2
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total depth of quality bases">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Indicates if record is a somatic mutation">
+##INFO=<ID=SS,Number=1,Type=String,Description="Somatic status of variant (0=Reference,1=Germline,2=Somatic,3=LOH, or 5=Unknown)">
+##INFO=<ID=SSC,Number=1,Type=String,Description="Somatic score in Phred scale (0-255) derived from somatic p-value">
+##INFO=<ID=GPV,Number=1,Type=Float,Description="Fisher's Exact Test P-value of tumor+normal versus no variant for Germline calls">
+##INFO=<ID=SPV,Number=1,Type=Float,Description="Fisher's Exact Test P-value of tumor versus normal for Somatic/LOH calls">
+##FILTER=<ID=str10,Description="Less than 10% or more than 90% of variant supporting reads on one strand">
+##FILTER=<ID=indelError,Description="Likely artifact due to indel reads at this position">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=RD,Number=1,Type=Integer,Description="Depth of reference-supporting bases (reads1)">
+##FORMAT=<ID=AD,Number=1,Type=Integer,Description="Depth of variant-supporting bases (reads2)">
+##FORMAT=<ID=FREQ,Number=1,Type=String,Description="Variant allele frequency">
+##FORMAT=<ID=DP4,Number=1,Type=String,Description="Strand read counts: ref/fwd, ref/rev, var/fwd, var/rev">
+##contig=<ID=15>
+##contig=<ID=16>
+##contig=<ID=17>
+##contig=<ID=18>
+##bcftools_normVersion=1.23.1+htslib-1.23.1
+##bcftools_normCommand=norm -f data/annotations/human_g1k_v37.fasta -m -both -O z -o results/svc2/svc_varscan/Somatic.snp.norm.vcf.gz results/svc2/svc_varscan/Somatic.snp.filtered.recode.vcf.gz; Date=Tue Jul  7 11:26:50 2026
+##bcftools_isecVersion=1.23.1+htslib-1.23.1
+##bcftools_isecCommand=isec -n=2 -w1 -O z -p results/svc2/tier1_highconfidence/isec_snvs results/svc2/svc_varscan/Somatic.snp.norm.vcf.gz results/svc2/svc_strelka2/results/variants/snvs.highconf.norm.vcf.gz; Date=Tue Jul  7 11:26:51 2026
+##fileDate=20260707
+##source_version=2.9.10
+##startTime=Tue Jul  7 11:23:02 2026
+##cmdline=/home/miculanl/bin/strelka-2.9.10/bin/configureStrelkaSomaticWorkflow.py --normalBam data/bamprocessing/recal2/Control.sorted.realigned.dedup.recal.bam --tumorBam data/bamprocessing/recal2/Tumor.sorted.realigned.dedup.recal.bam --referenceFasta data/annotations/human_g1k_v37.fasta --runDir results/svc2/svc_strelka2 --callRegions data/ogdata/Captured_Regions.bed.gz --exome
+##reference=file:///mnt/Windows/Users/Leonardo Miculan/Documents/UniTNNotes/A.A._2024-2025_1QCB/2nd_semester/Genomics/HumanGenom/CHG-project25/data/annotations/human_g1k_v37.fasta
+##contig=<ID=1,length=249250621>
+##contig=<ID=2,length=243199373>
+##contig=<ID=3,length=198022430>
+##contig=<ID=4,length=191154276>
+##contig=<ID=5,length=180915260>
+##contig=<ID=6,length=171115067>
+##contig=<ID=7,length=159138663>
+##contig=<ID=8,length=146364022>
+##contig=<ID=9,length=141213431>
+##contig=<ID=10,length=135534747>
+##contig=<ID=11,length=135006516>
+##contig=<ID=12,length=133851895>
+##contig=<ID=13,length=115169878>
+##contig=<ID=14,length=107349540>
+##contig=<ID=19,length=59128983>
+##contig=<ID=20,length=63025520>
+##contig=<ID=21,length=48129895>
+##contig=<ID=22,length=51304566>
+##contig=<ID=X,length=155270560>
+##contig=<ID=Y,length=59373566>
+##contig=<ID=MT,length=16569>
+##contig=<ID=GL000207.1,length=4262>
+##contig=<ID=GL000226.1,length=15008>
+##contig=<ID=GL000229.1,length=19913>
+##contig=<ID=GL000231.1,length=27386>
+##contig=<ID=GL000210.1,length=27682>
+##contig=<ID=GL000239.1,length=33824>
+##contig=<ID=GL000235.1,length=34474>
+##contig=<ID=GL000201.1,length=36148>
+##contig=<ID=GL000247.1,length=36422>
+##contig=<ID=GL000245.1,length=36651>
+##contig=<ID=GL000197.1,length=37175>
+##contig=<ID=GL000203.1,length=37498>
+##contig=<ID=GL000246.1,length=38154>
+##contig=<ID=GL000249.1,length=38502>
+##contig=<ID=GL000196.1,length=38914>
+##contig=<ID=GL000248.1,length=39786>
+##contig=<ID=GL000244.1,length=39929>
+##contig=<ID=GL000238.1,length=39939>
+##contig=<ID=GL000202.1,length=40103>
+##contig=<ID=GL000234.1,length=40531>
+##contig=<ID=GL000232.1,length=40652>
+##contig=<ID=GL000206.1,length=41001>
+##contig=<ID=GL000240.1,length=41933>
+##contig=<ID=GL000236.1,length=41934>
+##contig=<ID=GL000241.1,length=42152>
+##contig=<ID=GL000243.1,length=43341>
+##contig=<ID=GL000242.1,length=43523>
+##contig=<ID=GL000230.1,length=43691>
+##contig=<ID=GL000237.1,length=45867>
+##contig=<ID=GL000233.1,length=45941>
+##contig=<ID=GL000204.1,length=81310>
+##contig=<ID=GL000198.1,length=90085>
+##contig=<ID=GL000208.1,length=92689>
+##contig=<ID=GL000191.1,length=106433>
+##contig=<ID=GL000227.1,length=128374>
+##contig=<ID=GL000228.1,length=129120>
+##contig=<ID=GL000214.1,length=137718>
+##contig=<ID=GL000221.1,length=155397>
+##contig=<ID=GL000209.1,length=159169>
+##contig=<ID=GL000218.1,length=161147>
+##contig=<ID=GL000220.1,length=161802>
+##contig=<ID=GL000213.1,length=164239>
+##contig=<ID=GL000211.1,length=166566>
+##contig=<ID=GL000199.1,length=169874>
+##contig=<ID=GL000217.1,length=172149>
+##contig=<ID=GL000216.1,length=172294>
+##contig=<ID=GL000215.1,length=172545>
+##contig=<ID=GL000205.1,length=174588>
+##contig=<ID=GL000219.1,length=179198>
+##contig=<ID=GL000224.1,length=179693>
+##contig=<ID=GL000223.1,length=180455>
+##contig=<ID=GL000195.1,length=182896>
+##contig=<ID=GL000212.1,length=186858>
+##contig=<ID=GL000222.1,length=186861>
+##contig=<ID=GL000200.1,length=187035>
+##contig=<ID=GL000193.1,length=189789>
+##contig=<ID=GL000194.1,length=191469>
+##contig=<ID=GL000225.1,length=211173>
+##contig=<ID=GL000192.1,length=547496>
+##content=strelka somatic snv calls
+##priorSomaticSnvRate=0.0001
+##INFO=<ID=QSS,Number=1,Type=Integer,Description="Quality score for any somatic snv, ie. for the ALT allele to be present at a significantly different frequency in the tumor and normal">
+##INFO=<ID=TQSS,Number=1,Type=Integer,Description="Data tier used to compute QSS">
+##INFO=<ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+##INFO=<ID=QSS_NT,Number=1,Type=Integer,Description="Quality score reflecting the joint probability of a somatic variant and NT">
+##INFO=<ID=TQSS_NT,Number=1,Type=Integer,Description="Data tier used to compute QSS_NT">
+##INFO=<ID=SGT,Number=1,Type=String,Description="Most likely somatic genotype excluding normal noise states">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref read-position in the tumor">
+##INFO=<ID=SNVSB,Number=1,Type=Float,Description="Somatic SNV site strand bias">
+##INFO=<ID=PNOISE,Number=1,Type=Float,Description="Fraction of panel containing non-reference noise at this site">
+##INFO=<ID=PNOISE2,Number=1,Type=Float,Description="Fraction of panel containing more than one non-reference noise obs at this site">
+##INFO=<ID=SomaticEVS,Number=1,Type=Float,Description="Somatic Empirical Variant Score (EVS) expressing the phred-scaled probability of the call being a false positive observation.">
+##FORMAT=<ID=FDP,Number=1,Type=Integer,Description="Number of basecalls filtered from original read depth for tier1">
+##FORMAT=<ID=SDP,Number=1,Type=Integer,Description="Number of reads with deletions spanning this site at tier1">
+##FORMAT=<ID=SUBDP,Number=1,Type=Integer,Description="Number of reads below tier1 mapping quality threshold aligned across this site">
+##FORMAT=<ID=AU,Number=2,Type=Integer,Description="Number of 'A' alleles used in tiers 1,2">
+##FORMAT=<ID=CU,Number=2,Type=Integer,Description="Number of 'C' alleles used in tiers 1,2">
+##FORMAT=<ID=GU,Number=2,Type=Integer,Description="Number of 'G' alleles used in tiers 1,2">
+##FORMAT=<ID=TU,Number=2,Type=Integer,Description="Number of 'T' alleles used in tiers 1,2">
+##FILTER=<ID=LowEVS,Description="Somatic Empirical Variant Score (SomaticEVS) is below threshold">
+##FILTER=<ID=LowDepth,Description="Tumor or normal sample read depth at this locus is below 2">
+##bcftools_concatVersion=1.23.1+htslib-1.23.1
+##bcftools_concatCommand=concat -a results/svc2/tier1_highconfidence/somatic.snvs.tier1.vcf.gz results/svc2/tier1_expanded_signature/snvs.weak_corroborated.vcf.gz; Date=Tue Jul  7 12:42:08 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
+15	20093083	.	G	A	.	PASS	DP=138;SOMATIC;SS=2;SSC=104;GPV=1;SPV=3.7757e-11	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:90:88:0:0%:21,67,0,0	0/1:.:48:28:20:41.67%:8,20,7,13
+15	21134223	.	G	T	.	PASS	DP=108;SOMATIC;SS=2;SSC=14;GPV=1;SPV=0.037358	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:66:64:2:3.03%:40,24,2,0	0/1:.:42:36:6:14.29%:19,17,1,5
+15	23019848	.	C	T	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=CC->CC;DP=106;MQ=60;MQ0=0;ReadPosRankSum=1.61;SNVSB=0;SomaticEVS=1.02	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	58:0:0:0:0,0:58,58:0,0:0,0	47:0:0:0:0,0:44,45:0,0:3,3
+15	25585358	.	A	T	.	PASS	DP=99;SOMATIC;SS=2;SSC=35;GPV=1;SPV=0.00028565	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:61:61:0:0%:23,38,0,0	0/1:.:38:30:8:21.05%:14,16,1,7
+15	33538393	.	T	A	.	PASS	DP=84;SOMATIC;SS=2;SSC=13;GPV=1;SPV=0.049053	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:65:65:0:0%:14,51,0,0	0/1:.:19:17:2:10.53%:4,13,1,1
+15	34109150	.	G	T	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=GG->GG;DP=56;MQ=60;MQ0=0;ReadPosRankSum=0;SNVSB=0;SomaticEVS=0.9	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	36:1:0:0:0,0:0,0:35,36:0,0	20:0:0:0:0,0:0,0:18,18:2,2
+15	34398052	.	C	A	.	PASS	DP=93;SOMATIC;SS=2;SSC=83;GPV=1;SPV=4.5878e-09	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:59:58:1:1.69%:33,25,1,0	0/1:.:34:16:18:52.94%:10,6,16,2
+15	35377036	.	C	T	.	PASS	DP=263;SOMATIC;SS=2;SSC=33;GPV=1;SPV=0.00040098	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:162:154:8:4.94%:70,84,4,4	0/1:.:101:82:19:18.81%:35,47,6,13
+15	38645798	.	C	G	.	PASS	DP=89;SOMATIC;SS=2;SSC=71;GPV=1;SPV=7.3233e-08	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:62:62:0:0%:39,23,0,0	0/1:.:27:15:12:44.44%:8,7,7,5
+15	40685406	.	A	T	.	PASS	DP=147;SOMATIC;SS=2;SSC=24;GPV=1;SPV=0.0039676	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:97:97:0:0%:62,35,0,0	0/1:.:50:45:5:10%:32,13,3,2
+15	42438453	.	A	G	.	PASS	DP=206;SOMATIC;SS=2;SSC=165;GPV=1;SPV=2.9648e-17	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:137:137:0:0%:56,81,0,0	0/1:.:69:39:30:43.48%:15,24,15,15
+15	42840421	.	G	C	.	PASS	DP=178;SOMATIC;SS=2;SSC=14;GPV=1;SPV=0.037028	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:118:118:0:0%:50,68,0,0	0/1:.:60:57:3:5%:29,28,1,2
+15	45457519	.	T	G	.	PASS	DP=136;SOMATIC;SS=2;SSC=12;GPV=1;SPV=0.056511	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:87:86:1:1.15%:36,50,1,0	0/1:.:49:45:4:8.16%:18,27,2,2
+15	49800394	.	G	A	.	LowEVS	SOMATIC;QSS=9;TQSS=1;NT=ref;QSS_NT=9;TQSS_NT=1;SGT=GG->AG;DP=118;MQ=60;MQ0=0;ReadPosRankSum=-0.42;SNVSB=0;SomaticEVS=2.75	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	80:0:0:0:0,0:0,0:80,81:0,0	37:0:0:0:3,3:0,0:34,34:0,0
+15	50784955	.	C	A	.	PASS	DP=77;SOMATIC;SS=2;SSC=12;GPV=1;SPV=0.061449	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:46:46:0:0%:25,21,0,0	0/1:.:31:28:3:9.68%:22,6,2,1
+15	50784958	.	C	A	.	LowEVS	SOMATIC;QSS=6;TQSS=1;NT=ref;QSS_NT=6;TQSS_NT=1;SGT=CC->AC;DP=89;MQ=59.43;MQ0=0;ReadPosRankSum=-1.32;SNVSB=0;SomaticEVS=1.69	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	53:0:0:0:0,0:53,53:0,0:0,0	36:0:0:0:3,3:33,33:0,0:0,0
+15	50784990	.	T	C	.	PASS	DP=72;SOMATIC;SS=2;SSC=11;GPV=1;SPV=0.063931	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:43:42:0:0%:19,23,0,0	0/1:.:29:26:3:10.34%:12,14,2,1
+15	51783820	.	T	C	.	PASS	DP=48;SOMATIC;SS=2;SSC=8;GPV=1;SPV=0.15032	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:22:22:0:0%:17,5,0,0	0/1:.:26:23:3:11.54%:12,11,1,2
+15	62534764	.	A	T	.	PASS	DP=111;SOMATIC;SS=2;SSC=12;GPV=1;SPV=0.052418	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:72:70:1:1.41%:36,34,0,1	0/1:.:39:35:4:10.26%:21,14,2,2
+15	63946466	.	G	A	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=GG->GG;DP=80;MQ=60;MQ0=0;ReadPosRankSum=-0.45;SNVSB=0;SomaticEVS=1.14	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	50:0:0:0:0,0:0,0:50,50:0,0	30:0:0:0:3,3:0,0:27,27:0,0
+15	63970580	.	G	C	.	PASS	DP=40;SOMATIC;SS=2;SSC=10;GPV=1;SPV=0.082591	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:22:22:0:0%:1,21,0,0	0/1:.:18:15:3:16.67%:1,14,0,3
+15	77905821	.	G	T	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=GG->GG;DP=62;MQ=60;MQ0=0;ReadPosRankSum=0.6;SNVSB=0;SomaticEVS=0.96	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	39:0:0:0:0,0:0,0:39,39:0,0	23:2:0:0:0,0:0,0:19,20:2,3
+15	79586073	.	G	T	.	PASS	DP=75;SOMATIC;SS=2;SSC=9;GPV=1;SPV=0.11986	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:37:37:0:0%:20,17,0,0	0/1:.:38:34:3:8.11%:20,14,1,2
+15	85212935	.	G	T	.	LowEVS	SOMATIC;QSS=4;TQSS=1;NT=ref;QSS_NT=4;TQSS_NT=1;SGT=GG->GT;DP=86;MQ=60;MQ0=0;ReadPosRankSum=-1.75;SNVSB=0;SomaticEVS=1.06	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	41:0:0:0:0,0:0,0:41,41:0,0	45:0:0:0:0,0:0,0:42,42:3,3
+15	85402487	.	C	G	.	PASS	DP=190;SOMATIC;SS=2;SSC=235;GPV=1;SPV=2.6937e-24	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:99:99:0:0%:44,55,0,0	0/1:.:91:35:56:61.54%:12,23,21,35
+15	86266387	.	G	T	.	LowEVS	SOMATIC;QSS=7;TQSS=1;NT=ref;QSS_NT=7;TQSS_NT=1;SGT=GG->GT;DP=77;MQ=60;MQ0=0;ReadPosRankSum=-0.29;SNVSB=0;SomaticEVS=1.13	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	37:0:0:0:0,0:0,0:37,37:0,0	40:1:0:0:0,0:0,0:36,37:3,3
+15	86791010	.	G	C	.	PASS	DP=125;SOMATIC;SS=2;SSC=35;GPV=1;SPV=0.00029419	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:67:67:0:0%:31,36,0,0	0/1:.:58:48:10:17.24%:18,30,8,2
+15	91341532	.	G	C	.	PASS	DP=130;SOMATIC;SS=2;SSC=11;GPV=1;SPV=0.067478	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:63:63:0:0%:28,35,0,0	0/1:.:67:63:4:5.97%:23,40,2,2
+15	101717336	.	T	A	.	PASS	DP=91;SOMATIC;SS=2;SSC=21;GPV=1;SPV=0.0066129	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:45:45:0:0%:28,17,0,0	0/1:.:46:39:7:15.22%:17,22,4,3
+15	102303526	.	A	G	.	LowEVS	SOMATIC;QSS=2;TQSS=2;NT=ref;QSS_NT=2;TQSS_NT=2;SGT=AA->AA;DP=244;MQ=11.93;MQ0=177;ReadPosRankSum=-1.23;SNVSB=0;SomaticEVS=0.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	13:0:0:0:13,70:0,0:0,9:0,0	20:1:0:0:16,143:0,0:3,22:0,0
+16	632073	.	C	T	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=CC->CC;DP=35;MQ=60;MQ0=0;ReadPosRankSum=-1.01;SNVSB=0;SomaticEVS=0.84	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	15:0:0:0:0,0:15,15:0,0:0,0	20:0:0:0:0,0:18,18:0,0:2,2
+16	2314372	.	G	A	.	LowEVS	SOMATIC;QSS=3;TQSS=1;NT=ref;QSS_NT=3;TQSS_NT=1;SGT=GG->GG;DP=112;MQ=60;MQ0=0;ReadPosRankSum=-0.61;SNVSB=0;SomaticEVS=1.11	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	66:2:0:0:1,1:0,0:63,65:0,0	45:0:0:0:3,3:0,0:42,43:0,0
+16	2378577	.	C	A	.	PASS	DP=108;SOMATIC;SS=2;SSC=63;GPV=1;SPV=4.6401e-07	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:55:55:0:0%:23,32,0,0	0/1:.:53:35:18:33.96%:19,16,6,12
+16	9017061	.	T	A	.	PASS	DP=95;SOMATIC;SS=2;SSC=14;GPV=1;SPV=0.034739	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:46:45:0:0%:38,7,0,0	0/1:.:49:44:5:10.2%:39,5,2,3
+16	15127222	.	C	T	.	LowEVS	SOMATIC;QSS=6;TQSS=1;NT=ref;QSS_NT=6;TQSS_NT=1;SGT=CC->CT;DP=69;MQ=60;MQ0=0;ReadPosRankSum=-1.11;SNVSB=0;SomaticEVS=1.01	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	32:0:0:0:0,0:32,32:0,0:0,0	37:0:0:0:0,0:34,34:0,0:3,3
+16	15457884	.	G	A	.	LowEVS	SOMATIC;QSS=1;TQSS=2;NT=ref;QSS_NT=1;TQSS_NT=2;SGT=GG->GG;DP=145;MQ=23.97;MQ0=82;ReadPosRankSum=-0.74;SNVSB=0.28;SomaticEVS=0.47	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	30:0:0:0:0,0:0,0:30,82:0,0	28:0:0:0:2,2:0,0:25,60:1,1
+16	23592425	.	C	G	.	PASS	DP=58;SOMATIC;SS=2;SSC=29;GPV=1;SPV=0.0011582	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:31:31:0:0%:9,22,0,0	0/1:.:27:19:8:29.63%:7,12,2,6
+16	28915460	.	C	T	.	LowEVS	SOMATIC;QSS=5;TQSS=1;NT=ref;QSS_NT=5;TQSS_NT=1;SGT=CC->CT;DP=124;MQ=60;MQ0=0;ReadPosRankSum=0.05;SNVSB=0;SomaticEVS=1.37	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	68:0:0:0:0,0:68,68:0,0:0,0	56:0:0:0:0,0:53,53:0,0:3,3
+16	53499444	.	C	T	.	LowEVS	SOMATIC;QSS=3;TQSS=1;NT=ref;QSS_NT=3;TQSS_NT=1;SGT=CC->CC;DP=88;MQ=60;MQ0=0;ReadPosRankSum=0.45;SNVSB=0;SomaticEVS=1.54	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	56:0:0:0:0,0:56,56:0,0:0,0	32:0:0:0:0,0:29,29:0,0:3,3
+16	69988473	.	G	A	.	PASS	DP=135;SOMATIC;SS=2;SSC=27;GPV=1;SPV=0.0016556	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:73:71:2:2.74%:27,44,1,1	0/1:.:62:50:12:19.35%:17,33,8,4
+16	69988502	.	T	C	.	PASS	DP=126;SOMATIC;SS=2;SSC=11;GPV=1;SPV=0.078402	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:71:68:3:4.23%:16,52,1,2	0/1:.:55:48:7:12.73%:9,39,4,3
+16	85838532	.	A	G	.	PASS	DP=136;SOMATIC;SS=2;SSC=15;GPV=1;SPV=0.026832	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:69:69:0:0%:42,27,0,0	0/1:.:67:62:5:7.46%:31,31,4,1
+17	4082989	.	T	G	.	PASS	DP=134;SOMATIC;SS=2;SSC=22;GPV=1;SPV=0.0053041	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:69:69:0:0%:44,25,0,0	0/1:.:65:58:7:10.77%:46,12,3,4
+17	7577156	.	C	A	.	PASS	DP=86;SOMATIC;SS=2;SSC=114;GPV=1;SPV=3.2145e-12	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:46:46:0:0%:9,37,0,0	0/1:.:40:14:26:65%:3,11,3,23
+17	18647625	.	T	A	.	PASS	DP=237;SOMATIC;SS=2;SSC=12;GPV=1;SPV=0.05034	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:154:151:3:1.95%:84,67,3,0	0/1:.:83:77:6:7.23%:43,34,5,1
+17	25621392	.	G	A	.	PASS	DP=121;SOMATIC;SS=2;SSC=123;GPV=1;SPV=4.8378e-13	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:66:66:0:0%:54,12,0,0	0/1:.:55:26:29:52.73%:17,9,18,11
+17	26906313	.	G	A	.	PASS	DP=180;SOMATIC;SS=2;SSC=23;GPV=1;SPV=0.0049632	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:105:103:0:0%:25,78,0,0	0/1:.:75:69:6:8%:24,45,2,4
+17	27493765	.	G	T	.	LowEVS	SOMATIC;QSS=7;TQSS=1;NT=ref;QSS_NT=7;TQSS_NT=1;SGT=GG->GT;DP=71;MQ=60;MQ0=0;ReadPosRankSum=-0.04;SNVSB=0;SomaticEVS=2.46	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	47:0:0:0:0,0:0,0:47,47:0,0	24:0:0:0:0,0:0,0:21,21:3,3
+17	30648280	.	G	A	.	LowEVS	SOMATIC;QSS=1;TQSS=1;NT=ref;QSS_NT=1;TQSS_NT=1;SGT=GG->GG;DP=71;MQ=60;MQ0=0;ReadPosRankSum=-0.24;SNVSB=0;SomaticEVS=1.14	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	50:0:0:0:0,0:0,0:50,50:0,0	21:0:0:0:2,2:0,0:19,19:0,0
+17	39464736	.	C	G	.	PASS	DP=78;SOMATIC;SS=2;SSC=14;GPV=1;SPV=0.036707	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:43:43:0:0%:23,20,0,0	0/1:.:35:31:4:11.43%:15,16,2,2
+17	39622068	.	G	T	.	PASS	DP=118;SOMATIC;SS=2;SSC=13;GPV=1;SPV=0.047632	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:62:61:0:0%:27,34,0,0	0/1:.:56:51:4:7.27%:22,29,2,2
+17	42390505	.	G	T	.	PASS	DP=108;SOMATIC;SS=2;SSC=19;GPV=1;SPV=0.010992	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:72:72:0:0%:39,33,0,0	0/1:.:36:32:4:11.11%:19,13,3,1
+17	43011224	.	G	T	.	LowEVS	SOMATIC;QSS=8;TQSS=1;NT=ref;QSS_NT=8;TQSS_NT=1;SGT=GG->GT;DP=96;MQ=60;MQ0=0;ReadPosRankSum=-0.72;SNVSB=0;SomaticEVS=2.23	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	58:1:0:0:0,0:0,0:57,59:0,0	37:0:0:0:0,0:0,0:34,34:3,3
+17	46629593	.	G	T	.	LowEVS	SOMATIC;QSS=4;TQSS=1;NT=ref;QSS_NT=4;TQSS_NT=1;SGT=GG->GT;DP=138;MQ=60;MQ0=0;ReadPosRankSum=0.62;SNVSB=0;SomaticEVS=1.68	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	87:0:0:0:0,0:0,0:87,87:0,0	51:0:0:0:0,0:0,0:48,48:3,3
+17	57776597	.	T	G	.	PASS	DP=158;SOMATIC;SS=2;SSC=16;GPV=1;SPV=0.022321	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:96:96:0:0%:51,45,0,0	0/1:.:62:58:4:6.45%:30,28,2,2
+17	58089910	.	C	G	.	PASS	DP=105;SOMATIC;SS=2;SSC=32;GPV=1;SPV=0.00057174	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:70:69:1:1.43%:26,43,0,1	0/1:.:35:27:8:22.86%:14,13,2,6
+17	60821931	.	G	A	.	LowEVS	SOMATIC;QSS=7;TQSS=1;NT=ref;QSS_NT=7;TQSS_NT=1;SGT=GG->AG;DP=77;MQ=60;MQ0=0;ReadPosRankSum=-0.07;SNVSB=0;SomaticEVS=2.28	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	49:1:0:0:0,0:0,0:48,49:0,0	28:0:0:0:3,3:0,0:25,25:0,0
+17	61566441	.	C	T	.	LowEVS	SOMATIC;QSS=6;TQSS=1;NT=ref;QSS_NT=6;TQSS_NT=1;SGT=CC->CT;DP=108;MQ=60;MQ0=0;ReadPosRankSum=-1.25;SNVSB=0;SomaticEVS=2.11	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	62:0:0:0:0,0:62,62:0,0:0,0	46:0:0:0:0,0:43,43:0,0:3,3
+17	64881375	.	C	T	.	PASS	DP=107;SOMATIC;SS=2;SSC=42;GPV=1;SPV=6.1177e-05	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:53:53:0:0%:14,39,0,0	0/1:.:54:41:13:24.07%:16,25,6,7
+17	65908221	.	A	G	.	PASS	DP=80;SOMATIC;SS=2;SSC=38;GPV=1;SPV=0.00012898	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:60:60:0:0%:39,21,0,0	0/1:.:20:14:6:30%:10,4,5,1
+17	66872811	.	C	T	.	LowEVS	SOMATIC;QSS=8;TQSS=1;NT=ref;QSS_NT=8;TQSS_NT=1;SGT=CC->CT;DP=132;MQ=59.99;MQ0=0;ReadPosRankSum=-0.56;SNVSB=0;SomaticEVS=2.06	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	84:1:0:0:0,0:83,84:0,0:0,0	48:0:0:0:0,0:44,44:0,0:4,4
+17	71197439	.	C	T	.	PASS	DP=141;SOMATIC;SS=2;SSC=17;GPV=1;SPV=0.01766	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:89:88:0:0%:52,36,0,0	0/1:.:52:48:4:7.69%:19,29,1,3
+17	74211844	.	T	A	.	PASS	DP=36;SOMATIC;SS=2;SSC=5;GPV=1;SPV=0.30159	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:16:16:0:0%:6,10,0,0	0/1:.:20:18:2:10%:4,14,1,1
+17	74273320	.	T	C	.	PASS	DP=231;SOMATIC;SS=2;SSC=251;GPV=1;SPV=6.4521e-26	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:128:128:0:0%:44,84,0,0	0/1:.:103:46:57:55.34%:14,32,27,30
+17	79226306	.	G	A	.	PASS	DP=77;SOMATIC;SS=2;SSC=81;GPV=1;SPV=6.343e-09	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:44:44:0:0%:14,30,0,0	0/1:.:33:15:18:54.55%:7,8,9,9
+17	79768908	.	G	C	.	PASS	DP=178;SOMATIC;SS=2;SSC=212;GPV=1;SPV=5.4695e-22	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:102:102:0:0%:72,30,0,0	0/1:.:76:31:45:59.21%:25,6,33,12
+18	6997900	.	T	A	.	PASS	DP=103;SOMATIC;SS=2;SSC=85;GPV=1;SPV=2.9856e-09	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:49:49:0:0%:8,41,0,0	0/1:.:54:29:25:46.3%:9,20,5,20
+18	28898251	.	G	C	.	PASS	DP=97;SOMATIC;SS=2;SSC=14;GPV=1;SPV=0.037005	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:64:64:0:0%:40,24,0,0	0/1:.:33:30:3:9.09%:16,14,2,1
+18	46343572	.	G	T	.	PASS	DP=215;SOMATIC;SS=2;SSC=48;GPV=1;SPV=1.5634e-05	GT:GQ:DP:RD:AD:FREQ:DP4	0/0:.:99:98:0:0%:60,38,0,0	0/1:.:116:98:17:14.78%:58,40,8,9
