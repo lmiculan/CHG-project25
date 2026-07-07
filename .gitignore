@@ -10,5 +10,5 @@ data/annotations/human_g1k_v37.fasta
 !results/scv_gatk/Tumor_SCV_filtered.bcf.recode.vcf
 !results/scv_gatk/Control_SCV_filtered.bcf.recode.vcf
 
-!results/svc2/somatic.snvs.intersect.vcf
-!results/svc2/somatic.indels.intersect.vcf
+!results/svc2/somatic.tier1_highconfidence.final.vcf.gz
+!results/svc2/somatic.tier2_manual_review.final.vcf.gz
