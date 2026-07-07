@@ -1,4 +1,0 @@
-[2026-07-04T21:10:11.942681Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] [wrapperSignal] wrapperStart
-[2026-07-04T21:10:11.956675Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] [wrapperSignal] taskStart
-[2026-07-04T21:10:11.962354Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] [wrapperSignal] taskExitCode 0
-[2026-07-04T21:10:11.965627Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:getChromDepth_sample000_makeTmpDir] [wrapperSignal] taskElapsedSec 0

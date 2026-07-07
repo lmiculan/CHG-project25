@@ -1,4 +1,0 @@
-[2026-07-04T21:10:17.750107Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] [wrapperSignal] wrapperStart
-[2026-07-04T21:10:17.767662Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] [wrapperSignal] taskStart
-[2026-07-04T21:10:17.771933Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] [wrapperSignal] taskExitCode 0
-[2026-07-04T21:10:17.775873Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+makeTmpDir] [wrapperSignal] taskElapsedSec 0

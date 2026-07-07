@@ -1,43 +1,40 @@
 #!/bin/bash
-set -e
+set -euo pipefail
 
-NORMAL_old=data/bamprocessing/realign/Control.sorted.realigned.bam 
-TUMOR_old=data/bamprocessing/realign/Tumor.sorted.realigned.bam
-
+### --- paths (unchanged from original) ---------------------------------------
 NORMAL=data/bamprocessing/recal2/Control.sorted.realigned.dedup.recal.bam
 TUMOR=data/bamprocessing/recal2/Tumor.sorted.realigned.dedup.recal.bam
 
 REF=data/annotations/human_g1k_v37.fasta
-REF1=data/annotations/hapmap_3.3.b37.vcf
-#REF2=data/annotations/clinvar_Pathogenic.vcf
-REF2=data/annotations/clinvar_20260627.vcf.gz
+HAPMAP=data/annotations/hapmap_3.3.b37.vcf
+CLINVAR=data/annotations/clinvar_20260627.vcf.gz
+CAPTURE_BED=data/ogdata/Captured_Regions.bed.gz
+HOTSPOT_GENES=data/annotations/hotspot_genes.txt
 VARSCAN=~/bin/VarScan.v2.3.9.jar
-
-OUTDIR=results/svc2/svc_varscan
-OUTDIR2=results/svc2/svc_strelka2
+STRELKADIR=~/bin/strelka-2.9.10
+SNPSIFT=~/bin/snpEff/SnpSift.jar
+RESCUE_SCRIPT=scripts/strelka_rescue_lowevs.py   # the companion python script
 
 RESDIR=results/svc2
+VSDIR=$RESDIR/svc_varscan
+STDIR=$RESDIR/svc_strelka2
+VSANNOT=$VSDIR/annotation
+STANNOT=$STDIR/annotation
+TIER1=$RESDIR/tier1_highconfidence
+TIER2=$RESDIR/tier2_manual_review
 
-VSANNOT=$OUTDIR/annotation
-STRELKANNOT=$OUTDIR2/annotation
+mkdir -p "$VSDIR" "$STDIR" "$VSANNOT" "$STANNOT" "$TIER1" "$TIER2"
 
-SNPSIFT=/home/miculanl/bin/snpEff/SnpSift.jar
-STRELKADIR=/home/miculanl/bin/strelka-2.9.10
-JAVA8=/usr/lib/jvm/java-8-openjdk/bin/java
+# ### === STEP 1: VarScan2 =======================================================
+# echo "[1/8] Calling somatic variants with VarScan2"
 
-mkdir -p $OUTDIR
-mkdir -p $OUTDIR2
-mkdir -p $RESDIR
-
-# # Usa samtools con -B e dichiara prima NORMAL e poi TUMOR
 # samtools mpileup -B -q 1 \
 #   -f "$REF" \
-#   "$NORMAL" \
-#   "$TUMOR" \
-#   -l data/ogdata/Captured_Regions.bed.gz \
-#   | java -jar "$VARSCAN" somatic \
-#   --output-snp $OUTDIR/Somatic.snp.vcf \
-#   --output-indel $OUTDIR/Somatic.indel.vcf \
+#   "$NORMAL" "$TUMOR" \
+#   -l "$CAPTURE_BED" \
+# | java -jar "$VARSCAN" somatic \
+#   --output-snp "$VSDIR/Somatic.snp.vcf" \
+#   --output-indel "$VSDIR/Somatic.indel.vcf" \
 #   --mpileup 1 \
 #   --output-vcf 1 \
 #   --min-coverage 5 \
@@ -46,183 +43,193 @@ mkdir -p $RESDIR
 #   --min-coverage-normal 5 \
 #   --min-coverage-tumor 5
 
-# # Step 2: processSomatic
-# java -jar $VARSCAN processSomatic $OUTDIR/Somatic.snp.vcf \
-#   --min-tumor-freq 0.10 \
-#   --max-normal-freq 0.05 \
-#   --p-value 0.05
+# java -jar "$VARSCAN" processSomatic "$VSDIR/Somatic.snp.vcf" \
+#   --min-tumor-freq 0.10 --max-normal-freq 0.05 --p-value 0.05
+# java -jar "$VARSCAN" processSomatic "$VSDIR/Somatic.indel.vcf" \
+#   --min-tumor-freq 0.10 --max-normal-freq 0.05 --p-value 0.05
 
-# java -jar $VARSCAN processSomatic $OUTDIR/Somatic.indel.vcf \
-#   --min-tumor-freq 0.10 \
-#   --max-normal-freq 0.05 \
-#   --p-value 0.05
-
-# # Step 3: vcftools depth filtering
 # vcftools --max-meanDP 200 --min-meanDP 5 --remove-indels \
-#   --vcf $OUTDIR/Somatic.snp.Somatic.vcf \
-#   --out $OUTDIR/Somatic.snp.filtered --recode --recode-INFO-all
-
+#   --vcf "$VSDIR/Somatic.snp.Somatic.vcf" \
+#   --out "$VSDIR/Somatic.snp.filtered" --recode --recode-INFO-all
 # vcftools --max-meanDP 200 --min-meanDP 5 --keep-only-indels \
-#   --vcf $OUTDIR/Somatic.indel.Somatic.vcf \
-#   --out $OUTDIR/Somatic.indel.filtered --recode --recode-INFO-all
+#   --vcf "$VSDIR/Somatic.indel.Somatic.vcf" \
+#   --out "$VSDIR/Somatic.indel.filtered" --recode --recode-INFO-all
 
-#####
+# ### === STEP 2: Strelka2 =======================================================
+# echo "[2/8] Calling somatic variants with Strelka2"
 
-# Additional SVC with Strelka2
-# python2 $STRELKADIR/bin/configureStrelkaSomaticWorkflow.py \
-#   --normalBam $NORMAL \
-#   --tumorBam $TUMOR \
-#   --referenceFasta $REF \
-#   --runDir $OUTDIR2 \
-#   --callRegions data/ogdata/Captured_Regions.bed.gz \
+# python2 "$STRELKADIR/bin/configureStrelkaSomaticWorkflow.py" \
+#   --normalBam "$NORMAL" \
+#   --tumorBam "$TUMOR" \
+#   --referenceFasta "$REF" \
+#   --runDir "$STDIR" \
+#   --callRegions "$CAPTURE_BED" \
 #   --exome
 
-#   $OUTDIR2/runWorkflow.py -m local -j 4
-
-# #Step 3: vcftools depth filtering
-# vcftools --max-meanDP 200 --min-meanDP 5 \
-#   --gzvcf $OUTDIR2/results/variants/somatic.snvs.vcf.gz \
-#   --out $OUTDIR2/results/variants/somatic.snvs.filtered --recode --recode-INFO-all
+# "$STDIR/runWorkflow.py" -m local -j 4
 
 # vcftools --max-meanDP 200 --min-meanDP 5 \
-#   --gzvcf $OUTDIR2/results/variants/somatic.indels.vcf.gz \
-#   --out $OUTDIR2/results/variants/somatic.indels.filtered --recode --recode-INFO-all
+#   --gzvcf "$STDIR/results/variants/somatic.snvs.vcf.gz" \
+#   --out "$STDIR/results/variants/somatic.snvs.filtered" --recode --recode-INFO-all
+# vcftools --max-meanDP 200 --min-meanDP 5 \
+#   --gzvcf "$STDIR/results/variants/somatic.indels.vcf.gz" \
+#   --out "$STDIR/results/variants/somatic.indels.filtered" --recode --recode-INFO-all
 
-# #Step4: filter PASS filtering
-# vcftools --vcf $OUTDIR2/results/variants/somatic.snvs.filtered.vcf.recode.vcf \
-#   --out $OUTDIR2/results/variants/somatic.snvs.filtered.pass \
-#   --recode --recode-INFO-all --remove-filtered-all
+### === STEP 3: Strelka tiered confidence rescue (replaces plain PASS-only filtering) ==
+echo "[3/8] Splitting Strelka calls into pass / rescued_strong / rescued_weak / excluded"
 
-# vcftools --vcf $OUTDIR2/results/variants/somatic.indels.filtered.vcf.recode.vcf \
-#   --out $OUTDIR2/results/variants/somatic.indels.filtered.pass \
-#   --recode --recode-INFO-all --remove-filtered-all
-
-#####
-# Annotation and filtering of callers results
-# VarScan2
-# mkdir -p $VSANNOT
-# echo "Annotation of VarScan2 results"
-# echo "Annotating SNVs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $OUTDIR/Somatic.snp.filtered.recode.vcf  > $VSANNOT/Somatic.snp.filtered.recode.ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $VSANNOT/Somatic.snp.filtered.recode.ann_hapmap.vcf  > $VSANNOT/Somatic.snp.filtered.recode.ann_hapmap_clinvar.vcf
-
-# echo "Annotating INDELs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $OUTDIR/Somatic.indel.filtered.recode.vcf  > $VSANNOT/Somatic.indel.filtered.recode.ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $VSANNOT/Somatic.indel.filtered.recode.ann_hapmap.vcf  > $VSANNOT/Somatic.indel.filtered.recode.ann_hapmap_clinvar.vcf
-
-# echo "Filtering VarScan2 results for variants having hapmap and clinvar annotations"
-# echo "Filtering SNVs"
-# java -jar $SNPSIFT filter \
-#     "((exists CLNSIG))" \
-#     $VSANNOT/Somatic.snp.filtered.recode.ann_hapmap_clinvar.vcf \
-#     > $VSANNOT/Somatic.snp.filtered.recode.annfilter.vcf
-# echo "Filtering INDELs"
-# java -jar $SNPSIFT filter \
-#     "((exists CLNSIG))" \
-#     $VSANNOT/Somatic.indel.filtered.recode.ann_hapmap_clinvar.vcf \
-#     > $VSANNOT/Somatic.indel.filtered.recode.annfilter.vcf
-
-## strelka2
-# mkdir -p $STRELKANNOT
-# echo "Annotation of strelka2 results"
-# echo "Annotating SNVs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $OUTDIR2/results/variants/somatic.snvs.filtered.pass.recode.vcf  > $STRELKANNOT/strelka.somatic.snvs.filtered.recode.ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $STRELKANNOT/strelka.somatic.snvs.filtered.recode.ann_hapmap.vcf  > $STRELKANNOT/strelka.somatic.snvs.filtered.recode.ann_hapmap_clinvar.vcf
-
-# echo "Annotating INDELs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $OUTDIR2/results/variants/somatic.indels.filtered.pass.recode.vcf  > $STRELKANNOT/strelka.somatic.indels.filtered.recode.ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $STRELKANNOT/strelka.somatic.indels.filtered.recode.ann_hapmap.vcf  > $STRELKANNOT/strelka.somatic.indels.filtered.recode.ann_hapmap_clinvar.vcf
-
-# echo "Filtering strelka2 results for variants having hapmap and clinvar annotations"
-# echo "Filtering SNVs"
-# java -jar $SNPSIFT filter \
-#     "((exists CLNSIG))" \
-#     $STRELKANNOT/strelka.somatic.snvs.filtered.recode.ann_hapmap_clinvar.vcf \
-#     > $STRELKANNOT/strelka.somatic.snvs.filtered.recode.annfilter.vcf
-# echo "Filtering INDELs"
-# java -jar $SNPSIFT filter \
-#     "((exists CLNSIG))" \
-#     $STRELKANNOT/strelka.somatic.indels.filtered.recode.ann_hapmap_clinvar.vcf \
-#     > $STRELKANNOT/strelka.somatic.indels.filtered.recode.annfilter.vcf
-
-
-# # Intersection between VarScan and Strelka2 results
-# echo "Intersection between VarScan and Strelka2 results"
-# bedtools intersect -a results/svc2/svc_varscan/Somatic.snp.filtered.recode.vcf -b results/svc2/svc_strelka2/results/variants/somatic.snvs.filtered.vcf.recode.pass.vcf.recode.vcf  -header > $RESDIR/somatic.snvs.intersect.vcf
-# bedtools intersect -a results/svc2/svc_varscan/Somatic.indel.filtered.recode.vcf -b results/svc2/svc_strelka2/results/variants/somatic.indels.filtered.vcf.recode.pass.vcf.recode.vcf -header > $RESDIR/somatic.indels.intersect.vcf
-
-
-# # #Annotation of somatic variants with snpEff
-# echo "Annotation with hapmap and clinvar"
-
-# echo "Annotating SNVs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $RESDIR/somatic.snvs.intersect.vcf  > $RESDIR/somatic.snvs.intersect_ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $RESDIR/somatic.snvs.intersect_ann_hapmap.vcf  > $RESDIR/somatic.snvs.intersect_ann_hapmap_clinvar.vcf
-
-# echo "Annotating INDELs"
-# java -Xmx4g -jar $SNPSIFT Annotate $REF1 $RESDIR/somatic.indels.intersect.vcf  > $RESDIR/somatic.indels.intersect_ann_hapmap.vcf
-# java -Xmx4g -jar $SNPSIFT Annotate $REF2 $RESDIR/somatic.indels.intersect_ann_hapmap.vcf  > $RESDIR/somatic.indels.intersect_ann_hapmap_clinvar.vcf
-
-# # Filtering intersection results for variants having hapmap and clinvar annotations
-# echo "Filtering intersection results for hapmap and clinvar annotations"
-# echo "Filtering SNVs"
-# java -jar $SNPSIFT filter \
-#     "((ANN[*].IMPACT = 'HIGH') | (ANN[*].IMPACT = 'MODERATE')) & ((INFO.CLNSIG =~ 'Pathogenic') | (INFO.CLNSIG =~ 'Likely_Pathogenic'))" \
-#     results/svc2/somatic.snvs.intersect_ann_hapmap_clinvar.vcf \
-#     > results/svc2/somatic.snvs.intersect_annfilter.vcf
-# echo "Filtering INDELs"
-# java -jar $SNPSIFT filter \
-#     "((ANN[*].IMPACT = 'HIGH') | (ANN[*].IMPACT = 'MODERATE')) & ((INFO.CLNSIG =~ 'Pathogenic') | (INFO.CLNSIG =~ 'Likely_Pathogenic'))" \
-#     results/svc2/somatic.indels.intersect_ann_hapmap_clinvar.vcf \
-#     > results/svc2/somatic.indels.intersect_annfilter.vcf
-
-# Merge SNVs and INDELs
-echo "Merging SNVs and INDELs"
-# Indexing
-for vcf in \
-  results/svc2/svc_varscan/annotation/Somatic.indel.filtered.recode.ann_hapmap_clinvar.vcf \
-  results/svc2/svc_varscan/annotation/Somatic.snp.filtered.recode.ann_hapmap_clinvar.vcf \
-  results/svc2/svc_strelka2/annotation/strelka.somatic.snvs.filtered.recode.annfilter.vcf \
-  results/svc2/svc_strelka2/annotation/strelka.somatic.indels.filtered.recode.annfilter.vcf; do
-    bgzip -c "$vcf" > "${vcf}.gz"
-    tabix -p vcf "${vcf}.gz"
+for VTYPE in snvs indels; do
+  python3 "$RESCUE_SCRIPT" \
+    --input "$STDIR/results/variants/somatic.${VTYPE}.filtered.recode.vcf" \
+    --out-pass "$STDIR/results/variants/${VTYPE}.pass.vcf" \
+    --out-rescued-strong "$STDIR/results/variants/${VTYPE}.rescued_strong.vcf" \
+    --out-rescued-weak "$STDIR/results/variants/${VTYPE}.rescued_weak.vcf" \
+    --out-excluded "$STDIR/results/variants/${VTYPE}.excluded.vcf" \
+    --min-tumor-vaf 0.05 --max-normal-vaf 0.02 --min-tumor-dp 20 --min-qss 10
 done
 
+# Strelka's automatic high-confidence set = PASS + rescued_strong
+for VTYPE in snvs indels; do
+  for f in pass rescued_strong; do
+    bgzip -f -c "$STDIR/results/variants/${VTYPE}.${f}.vcf" > "$STDIR/results/variants/${VTYPE}.${f}.vcf.gz"
+    tabix -f -p vcf "$STDIR/results/variants/${VTYPE}.${f}.vcf.gz"
+  done
+  bcftools concat -a \
+    "$STDIR/results/variants/${VTYPE}.pass.vcf.gz" \
+    "$STDIR/results/variants/${VTYPE}.rescued_strong.vcf.gz" \
+  | bcftools sort -O z -o "$STDIR/results/variants/${VTYPE}.highconf.vcf.gz"
+  tabix -f -p vcf "$STDIR/results/variants/${VTYPE}.highconf.vcf.gz"
+done
+
+### === STEP 4: Normalize both callers before comparing alleles ================
+echo "[4/8] Normalizing variant representation (left-align, split multiallelics)"
+
+bgzip -f -c "$VSDIR/Somatic.snp.filtered.recode.vcf"   > "$VSDIR/Somatic.snp.filtered.recode.vcf.gz"
+bgzip -f -c "$VSDIR/Somatic.indel.filtered.recode.vcf" > "$VSDIR/Somatic.indel.filtered.recode.vcf.gz"
+tabix -f -p vcf "$VSDIR/Somatic.snp.filtered.recode.vcf.gz"
+tabix -f -p vcf "$VSDIR/Somatic.indel.filtered.recode.vcf.gz"
+
+bcftools norm -f "$REF" -m -both "$VSDIR/Somatic.snp.filtered.recode.vcf.gz"   -O z -o "$VSDIR/Somatic.snp.norm.vcf.gz"
+bcftools norm -f "$REF" -m -both "$VSDIR/Somatic.indel.filtered.recode.vcf.gz" -O z -o "$VSDIR/Somatic.indel.norm.vcf.gz"
+tabix -f -p vcf "$VSDIR/Somatic.snp.norm.vcf.gz"
+tabix -f -p vcf "$VSDIR/Somatic.indel.norm.vcf.gz"
+
+bcftools norm -f "$REF" -m -both "$STDIR/results/variants/snvs.highconf.vcf.gz"   -O z -o "$STDIR/results/variants/snvs.highconf.norm.vcf.gz"
+bcftools norm -f "$REF" -m -both "$STDIR/results/variants/indels.highconf.vcf.gz" -O z -o "$STDIR/results/variants/indels.highconf.norm.vcf.gz"
+tabix -f -p vcf "$STDIR/results/variants/snvs.highconf.norm.vcf.gz"
+tabix -f -p vcf "$STDIR/results/variants/indels.highconf.norm.vcf.gz"
+
+### === STEP 5: Tier1 -- allele-aware intersection between callers =============
+echo "[5/8] Building tier1 (both-caller) high-confidence set"
+
+bcftools isec -n=2 -w1 -O z \
+  "$VSDIR/Somatic.snp.norm.vcf.gz" "$STDIR/results/variants/snvs.highconf.norm.vcf.gz" \
+  -p "$TIER1/isec_snvs"
+bcftools isec -n=2 -w1 -O z \
+  "$VSDIR/Somatic.indel.norm.vcf.gz" "$STDIR/results/variants/indels.highconf.norm.vcf.gz" \
+  -p "$TIER1/isec_indels"
+
+cp "$TIER1/isec_snvs/0000.vcf.gz"   "$TIER1/somatic.snvs.tier1.vcf.gz"
+cp "$TIER1/isec_indels/0000.vcf.gz" "$TIER1/somatic.indels.tier1.vcf.gz"
+tabix -f -p vcf "$TIER1/somatic.snvs.tier1.vcf.gz"
+tabix -f -p vcf "$TIER1/somatic.indels.tier1.vcf.gz"
+
+### === STEP 6: Tier2 -- single-caller candidates, restricted to plausible pathogenic hits ==
+echo "[6/8] Building tier2 (single-caller, manual-review) candidate set"
+
+# Variants private to VarScan (not corroborated by Strelka's high-confidence set)
+bcftools isec -n=1 -w1 -O z \
+  "$VSDIR/Somatic.snp.norm.vcf.gz" "$STDIR/results/variants/snvs.highconf.norm.vcf.gz" \
+  -p "$TIER2/varscan_only_snvs"
+bcftools isec -n=1 -w1 -O z \
+  "$VSDIR/Somatic.indel.norm.vcf.gz" "$STDIR/results/variants/indels.highconf.norm.vcf.gz" \
+  -p "$TIER2/varscan_only_indels"
+
+# Strelka rescued_weak calls (low QSS) are ONLY ever eligible for tier2, never tier1
+bgzip -f -c "$STDIR/results/variants/snvs.rescued_weak.vcf"   > "$STDIR/results/variants/snvs.rescued_weak.vcf.gz"
+bgzip -f -c "$STDIR/results/variants/indels.rescued_weak.vcf" > "$STDIR/results/variants/indels.rescued_weak.vcf.gz"
+tabix -f -p vcf "$STDIR/results/variants/snvs.rescued_weak.vcf.gz"
+tabix -f -p vcf "$STDIR/results/variants/indels.rescued_weak.vcf.gz"
+
 bcftools concat -a \
-  results/svc2/svc_varscan/annotation/Somatic.snp.filtered.recode.ann_hapmap_clinvar.vcf.gz \
-  results/svc2/svc_varscan/annotation/Somatic.indel.filtered.recode.ann_hapmap_clinvar.vcf.gz | \
-  bcftools sort -O z -o results/svc2/svc_varscan/annotation/varscan.somatic.combined.vcf.gz
-
-tabix -p vcf results/svc2/svc_varscan/annotation/varscan.somatic.combined.vcf.gz
-
+  "$TIER2/varscan_only_snvs/0000.vcf.gz" \
+  "$STDIR/results/variants/snvs.rescued_weak.vcf.gz" \
+| bcftools sort -O z -o "$TIER2/somatic.snvs.tier2_candidates.vcf.gz"
 bcftools concat -a \
-  results/svc2/svc_strelka2/annotation/strelka.somatic.snvs.filtered.recode.annfilter.vcf.gz \
-  results/svc2/svc_strelka2/annotation/strelka.somatic.indels.filtered.recode.annfilter.vcf.gz | \
-  bcftools sort -O z -o results/svc2/svc_strelka2/annotation/strelka.somatic.combined.vcf.gz
+  "$TIER2/varscan_only_indels/0000.vcf.gz" \
+  "$STDIR/results/variants/indels.rescued_weak.vcf.gz" \
+| bcftools sort -O z -o "$TIER2/somatic.indels.tier2_candidates.vcf.gz"
+tabix -f -p vcf "$TIER2/somatic.snvs.tier2_candidates.vcf.gz"
+tabix -f -p vcf "$TIER2/somatic.indels.tier2_candidates.vcf.gz"
 
-tabix -p vcf results/svc2/svc_strelka2/annotation/strelka.somatic.combined.vcf.gz
+### === STEP 7: Annotation (hapmap + ClinVar) for both tiers ===================
+echo "[7/8] Annotating tier1 and tier2 with hapmap + ClinVar"
 
-bcftools concat -a -d all \
-  results/svc2/svc_varscan/annotation/varscan.somatic.combined.vcf.gz \
-  results/svc2/svc_strelka2/annotation/strelka.somatic.combined.vcf.gz \
-  -O v -o results/svc2/somatic.final.unique.vcf
+annotate () {
+  local IN=$1 OUT_PREFIX=$2
+  java -Xmx4g -jar "$SNPSIFT" Annotate "$HAPMAP"  "$IN" > "${OUT_PREFIX}.ann_hapmap.vcf"
+  java -Xmx4g -jar "$SNPSIFT" Annotate "$CLINVAR" "${OUT_PREFIX}.ann_hapmap.vcf" > "${OUT_PREFIX}.ann_hapmap_clinvar.vcf"
+}
 
-# Annotation of final unique somatic variants
-echo "Annotation of final unique somatic variants"
+for VTYPE in snvs indels; do
+  bcftools view "$TIER1/somatic.${VTYPE}.tier1.vcf.gz" > "$TIER1/somatic.${VTYPE}.tier1.vcf"
+  annotate "$TIER1/somatic.${VTYPE}.tier1.vcf" "$TIER1/somatic.${VTYPE}.tier1"
 
-java -Xmx4g -jar $SNPSIFT Annotate $REF1 results/svc2/somatic.final.unique.vcf  > results/svc2/somatic.final.unique_ann_hapmap.vcf
-java -Xmx4g -jar $SNPSIFT Annotate $REF2 results/svc2/somatic.final.unique_ann_hapmap.vcf  > results/svc2/somatic.final.unique_ann_hapmap_clinvar.vcf
+  bcftools view "$TIER2/somatic.${VTYPE}.tier2_candidates.vcf.gz" > "$TIER2/somatic.${VTYPE}.tier2.vcf"
+  annotate "$TIER2/somatic.${VTYPE}.tier2.vcf" "$TIER2/somatic.${VTYPE}.tier2"
+done
 
-# Filtering final unique somatic variants for hapmap and clinvar annotations
-echo "Filtering final unique somatic variants for hapmap and clinvar annotations"
-java -jar $SNPSIFT filter \
-    "(exists CLNSIG)" \
-    results/svc2/somatic.final.unique_ann_hapmap_clinvar.vcf \
-    > results/svc2/somatic.final.unique_annfilter.vcf
+# Tier1 report: keep everything (this is the trusted set -- also the one to
+# feed into downstream mutational signature / VAF-based analyses).
+# Tier2 report: restrict to plausible pathogenic hits only, since this tier
+# has single-caller support and should not be reported wholesale -- flag for
+# manual review (IGV, orthogonal validation) rather than auto-accept.
+HOTSPOT_FILTER=""
+if [ -f "$HOTSPOT_GENES" ]; then
+  GENES=$(paste -sd'|' "$HOTSPOT_GENES")
+  HOTSPOT_FILTER=" | (ANN[*].GENE =~ '${GENES}')"
+fi
 
-# Extract from VCF variants to TSV
-echo "Extracting final unique somatic variants to TSV"
-bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%INFO/GENEINFO\t%INFO/CLNSIG\n' \
-    results/svc2/somatic.final.unique_annfilter.vcf \
-    | sed 's/:[0-9]*//g' \
-    > results/svc2/somatic.final.clinical_summary.tsv
+for VTYPE in snvs indels; do
+  java -jar "$SNPSIFT" filter \
+    "((ANN[*].IMPACT = 'HIGH') | (ANN[*].IMPACT = 'MODERATE')) & ((INFO.CLNSIG =~ 'Pathogenic') | (INFO.CLNSIG =~ 'Likely_pathogenic')${HOTSPOT_FILTER})" \
+    "$TIER2/somatic.${VTYPE}.tier2.ann_hapmap_clinvar.vcf" \
+    > "$TIER2/somatic.${VTYPE}.tier2.review_candidates.vcf"
+done
+
+### === STEP 8: Merge, extract clinical summary TSVs ============================
+echo "[8/8] Merging SNVs+indels per tier and extracting summary TSVs"
+
+for vcf in "$TIER1/somatic.snvs.tier1.ann_hapmap_clinvar.vcf" "$TIER1/somatic.indels.tier1.ann_hapmap_clinvar.vcf"; do
+  bgzip -f -c "$vcf" > "${vcf}.gz"; tabix -f -p vcf "${vcf}.gz"
+done
+bcftools concat -a \
+  "$TIER1/somatic.snvs.tier1.ann_hapmap_clinvar.vcf.gz" \
+  "$TIER1/somatic.indels.tier1.ann_hapmap_clinvar.vcf.gz" \
+| bcftools sort -O z -o "$RESDIR/somatic.tier1_highconfidence.final.vcf.gz"
+tabix -f -p vcf "$RESDIR/somatic.tier1_highconfidence.final.vcf.gz"
+
+for vcf in "$TIER2/somatic.snvs.tier2.review_candidates.vcf" "$TIER2/somatic.indels.tier2.review_candidates.vcf"; do
+  bgzip -f -c "$vcf" > "${vcf}.gz"; tabix -f -p vcf "${vcf}.gz"
+done
+bcftools concat -a \
+  "$TIER2/somatic.snvs.tier2.review_candidates.vcf.gz" \
+  "$TIER2/somatic.indels.tier2.review_candidates.vcf.gz" \
+| bcftools sort -O z -o "$RESDIR/somatic.tier2_manual_review.final.vcf.gz"
+tabix -f -p vcf "$RESDIR/somatic.tier2_manual_review.final.vcf.gz"
+
+bcftools query -f 'TIER1\t%CHROM\t%POS\t%REF\t%ALT\t%INFO/GENEINFO\t%INFO/CLNSIG\n' \
+  "$RESDIR/somatic.tier1_highconfidence.final.vcf.gz" | sed 's/:[0-9]*//g' \
+  > "$RESDIR/somatic.clinical_summary.tsv"
+bcftools query -f 'TIER2\t%CHROM\t%POS\t%REF\t%ALT\t%INFO/GENEINFO\t%INFO/CLNSIG\n' \
+  "$RESDIR/somatic.tier2_manual_review.final.vcf.gz" | sed 's/:[0-9]*//g' \
+  >> "$RESDIR/somatic.clinical_summary.tsv"
+
+echo "Done."
+echo "  Tier1 (high confidence, both callers agree):   $RESDIR/somatic.tier1_highconfidence.final.vcf.gz"
+echo "  Tier2 (single-caller, manual review needed):    $RESDIR/somatic.tier2_manual_review.final.vcf.gz"
+echo "  Combined clinical summary TSV:                  $RESDIR/somatic.clinical_summary.tsv"
+echo ""
+echo "NOTE: for mutational signature analysis and purity/ploidy work, use ONLY"
+echo "tier1 -- tier2 is single-caller-supported and not suitable for spectrum-"
+echo "based analyses."

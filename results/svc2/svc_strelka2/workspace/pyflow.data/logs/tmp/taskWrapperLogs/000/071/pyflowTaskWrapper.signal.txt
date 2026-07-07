@@ -1,4 +1,4 @@
-[2026-07-05T17:18:34.289345Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] wrapperStart
-[2026-07-05T17:18:34.297010Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskStart
-[2026-07-05T17:18:34.305318Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskExitCode 0
-[2026-07-05T17:18:34.309961Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskElapsedSec 0
+[2026-07-07T11:25:51.635584Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] wrapperStart
+[2026-07-07T11:25:51.643947Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskStart
+[2026-07-07T11:25:51.657775Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskExitCode 0
+[2026-07-07T11:25:51.662243Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+removeTmpDir] [wrapperSignal] taskElapsedSec 0

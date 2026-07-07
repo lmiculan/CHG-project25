@@ -1,4 +1,0 @@
-[2026-07-04T21:13:23.232233Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] [wrapperSignal] wrapperStart
-[2026-07-04T21:13:23.241452Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] [wrapperSignal] taskStart
-[2026-07-04T21:13:23.249951Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] [wrapperSignal] taskExitCode 0
-[2026-07-04T21:13:23.255452Z] [FORSAKEN] [10670_1] [pyflowTaskWrapper:CallGenome+Indel_concat_vcf] [wrapperSignal] taskElapsedSec 0

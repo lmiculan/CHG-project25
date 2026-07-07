@@ -1,4 +1,4 @@
-[2026-07-05T17:18:34.227587Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] wrapperStart
-[2026-07-05T17:18:34.237924Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskStart
-[2026-07-05T17:18:34.255245Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskExitCode 0
-[2026-07-05T17:18:34.256608Z] [FORSAKEN] [10919_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskElapsedSec 0
+[2026-07-07T11:25:51.509873Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] wrapperStart
+[2026-07-07T11:25:51.517544Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskStart
+[2026-07-07T11:25:51.542667Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskExitCode 0
+[2026-07-07T11:25:51.544240Z] [FORSAKEN] [7172_1] [pyflowTaskWrapper:CallGenome+SNV_index_vcf] [wrapperSignal] taskElapsedSec 0
