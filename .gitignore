@@ -12,3 +12,5 @@ data/annotations/human_g1k_v37.fasta
 
 !results/svc2/somatic.tier1_highconfidence.final.vcf.gz
 !results/svc2/somatic.tier2_manual_review.final.vcf.gz
+!results/svc2/tier1_highconfidence/somatic.snvs.tier1.vcf
+!results/svc2/tier1_highconfidence/somatic.indels.tier1.vcf

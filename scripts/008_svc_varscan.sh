@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-### --- paths (unchanged from original) ---------------------------------------
+### --- paths ---------------------------------------
 NORMAL=data/bamprocessing/recal2/Control.sorted.realigned.dedup.recal.bam
 TUMOR=data/bamprocessing/recal2/Tumor.sorted.realigned.dedup.recal.bam
 
@@ -13,7 +13,7 @@ HOTSPOT_GENES=data/annotations/hotspot_genes.txt
 VARSCAN=~/bin/VarScan.v2.3.9.jar
 STRELKADIR=~/bin/strelka-2.9.10
 SNPSIFT=~/bin/snpEff/SnpSift.jar
-RESCUE_SCRIPT=scripts/strelka_rescue_lowevs.py   # the companion python script
+RESCUE_SCRIPT=scripts/strelka_rescue_lowevs.py   # companion python script
 
 RESDIR=results/svc2
 VSDIR=$RESDIR/svc_varscan
